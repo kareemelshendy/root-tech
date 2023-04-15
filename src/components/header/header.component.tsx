@@ -1,12 +1,12 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-
+import styles from './header.module.scss';
+import { HeaderTop } from '@/components';
 interface Props {
 	isWhite?: boolean;
 }
 
-import styles from './header.module.scss';
 export const Header: React.FC<Props> = ({ isWhite = false }) => {
 	const router = useRouter();
 
@@ -15,6 +15,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 
 	return (
 		<>
+			<HeaderTop />
 			<header
 				className={`${styles['header']} ${
 					isWhite ? styles['header__white'] : ''
@@ -106,7 +107,6 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							onClick={() => setShowMenu && setShowMenu(true)}>
 							<TogglerIcon />
 						</button> */}
-                        
 					</div>
 					{/* left */}
 					<div></div>

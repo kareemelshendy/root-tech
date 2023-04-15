@@ -3,10 +3,16 @@
 
 
     &__top{
-        @apply flex  items-center justify-between;
+        @apply flex  justify-between border-b-2 border-white;
 
         &-title{
             @apply text-[20px] leading-[26px] text-white font-normal
+        }
+
+        &-contact{
+            &-item{
+                @apply flex items-center gap-3 text-white text-[16px] mb-3
+            }
         }
         
     }

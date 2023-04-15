@@ -6,7 +6,7 @@
 
 	&__white {
 		z-index: 99;
-		 transition-duration: 1s;
+		transition-duration: 1s;
 		@apply fixed -top-full right-0 left-0 bg-white opacity-0 shadow-default;
 
 		&--active {
@@ -15,23 +15,23 @@
 	}
 
 	&__top {
-		@apply hidden p-2 md:flex items-center justify-between bg-white;
+		@apply container;
 
-		&-contact {
-			@apply flex items-center gap-8;
+		&-wrapper {
+			@apply border-b border-colorPrimary hidden md:flex justify-between items-center py-[12px];
 		}
 
-		&-item {
-			@apply flex items-center gap-2;
+		&-content {
+			@apply flex gap-[13px] text-[16px] font-medium leading-[30px];
 
 			&-text {
-				@apply text-[12px] leading-[22px] text-colorPrimary;
-			}
-
-			&-icon{
-				@apply text-colorPrimary
+				@apply pr-[13px] border-r border-colorPrimary;
 			}
 		}
+	}
+
+	&__lang{
+		@apply flex items-center gap-1
 	}
 
 	&__wrapper {
@@ -74,20 +74,20 @@
 			}
 		}
 
-		#{$parent}__white &{
-				&-link{
-					&--active {
-						@apply before:bg-colorPrimary
-					}
+		#{$parent}__white & {
+			&-link {
+				&--active {
+					@apply before:bg-colorPrimary;
 				}
-		}	
+			}
+		}
 	}
 
 	&__actions {
 		@apply hidden md:flex items-center gap-6;
 
 		&-button {
-			@apply py-[10px] w-[116px] lg:w-[116px] flex justify-center items-center text-[16px]  rounded-default bg-colorPrimary text-white  h-[40px]  font-[800];
+			@apply py-[10px] w-[116px] lg:w-[116px] flex justify-center items-center text-[16px]  rounded-default bg-colorPrimary text-white  h-[40px]  font-semibold;
 
 			#{$parent}__white & {
 				@apply bg-colorPrimary text-white;
@@ -106,7 +106,7 @@
 		}
 
 		&-close {
-			inset-inline-end: 2rem; 
+			inset-inline-end: 2rem;
 			@apply absolute  text-[27px];
 		}
 

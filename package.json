@@ -6,9 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "svgr": "npx @svgr/cli -d src/components/icons public/icons --icon --typescript --memo --filename-case kebab"
   },
   "dependencies": {
+    "@svgr/cli": "^7.0.0",
     "@types/node": "18.15.11",
     "@types/react": "18.0.35",
     "@types/react-dom": "18.0.11",
