@@ -1,0 +1,41 @@
+body,
+html {
+	direction: ltr;
+	text-align: left;
+	scroll-behavior: smooth;
+}
+
+[dir='ltr'] body {
+	text-align: left;
+	direction: ltr;
+}
+
+@layer base {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		@apply text-colorHeading;
+	}
+}
+
+.hero-with-header {
+	background: radial-gradient(
+		50% 44.06% at 50% 44.06%,
+		#48174d 0%,
+		#211033 100%
+	);
+	clip-path: polygon(0 0, 100% 0, 100% 91%, 0% 100%);
+
+	@apply h-[440px] md:h-[464px] lg:h-[673px];
+}
+
+.section-title {
+	@apply text-base text-center mb-1 text-colorPrimary font-bold;
+}
+.section-heading {
+	margin-inline: auto;
+	@apply font-bold text-base md:text-[20px] text-center leading-[38px] text-colorHeading mb-6 md:mb-[48px] max-w-[544px];
+}

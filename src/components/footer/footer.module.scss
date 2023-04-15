@@ -1,0 +1,13 @@
+.footer{
+    @apply py-[42px] bg-colorPrimary;
+
+
+    &__top{
+        @apply flex  items-center justify-between;
+
+        &-title{
+            @apply text-[20px] leading-[26px] text-white font-normal
+        }
+        
+    }
+}

@@ -1,0 +1,141 @@
+@use '@/styles/mixins' as *;
+
+.header {
+	$parent: &;
+	@apply py-3;
+
+	&__white {
+		z-index: 99;
+		 transition-duration: 1s;
+		@apply fixed -top-full right-0 left-0 bg-white opacity-0 shadow-default;
+
+		&--active {
+			@apply top-0 opacity-100;
+		}
+	}
+
+	&__top {
+		@apply hidden p-2 md:flex items-center justify-between bg-white;
+
+		&-contact {
+			@apply flex items-center gap-8;
+		}
+
+		&-item {
+			@apply flex items-center gap-2;
+
+			&-text {
+				@apply text-[12px] leading-[22px] text-colorPrimary;
+			}
+
+			&-icon{
+				@apply text-colorPrimary
+			}
+		}
+	}
+
+	&__wrapper {
+		@apply flex items-center justify-between  text-white w-full;
+
+		#{$parent}__white & {
+			@apply text-colorPrimary;
+		}
+	}
+
+	&__logo {
+		@apply flex items-center gap-2;
+
+		&-icon {
+			@apply text-[45px];
+		}
+
+		&-text {
+			@apply text-2xl font-bold;
+		}
+	}
+
+	&__menu {
+		margin-inline-start: 2rem;
+		@apply hidden  md:flex gap-[24px] lg:gap-[56px];
+
+		@include media-breakpoint-up(lg) {
+			margin-inline-start: 7rem;
+		}
+
+		&-wrapper {
+			@apply flex items-center;
+		}
+
+		&-link {
+			@apply text-[20px] leading-[41px] w-[73px]  font-[500] relative duration-300 hover:text-colorPrimary  text-black;
+
+			&--active {
+				@apply before:absolute before:content-['']  before:-bottom-2 before:w-[28px] before:h-[1px] before:bg-white flex justify-center before:opacity-100 before:duration-300;
+			}
+		}
+
+		#{$parent}__white &{
+				&-link{
+					&--active {
+						@apply before:bg-colorPrimary
+					}
+				}
+		}	
+	}
+
+	&__actions {
+		@apply hidden md:flex items-center gap-6;
+
+		&-button {
+			@apply py-[10px] w-[116px] lg:w-[116px] flex justify-center items-center text-[16px]  rounded-default bg-colorPrimary text-white  h-[40px]  font-[800];
+
+			#{$parent}__white & {
+				@apply bg-colorPrimary text-white;
+			}
+		}
+	}
+
+	&__toggle {
+		&-wrapper {
+			z-index: 100;
+			@apply fixed top-0 right-0 left-0 h-[548px] bg-white p-[30px] -translate-y-full duration-300 ease-out;
+
+			&--show {
+				@apply translate-y-0;
+			}
+		}
+
+		&-close {
+			inset-inline-end: 2rem; 
+			@apply absolute  text-[27px];
+		}
+
+		&-dropshadow {
+			@apply fixed top-0 right-0 left-0 bottom-0;
+
+			&--show {
+				@apply bg-black/25;
+			}
+		}
+
+		&-button {
+			@apply md:hidden text-[27px] text-white;
+		}
+
+		#{$parent}__white & {
+			&-button {
+				@apply text-colorPrimary;
+			}
+		}
+
+		&-menu {
+			&-item {
+				@apply mb-[48px] text-[26px] leading-[22px] font-bold;
+			}
+		}
+
+		&-link {
+			@apply w-[154px] block py-[6px] mb-[48px] bg-colorPrimary rounded-default text-white text-[18px] leading-[34px] text-center;
+		}
+	}
+}

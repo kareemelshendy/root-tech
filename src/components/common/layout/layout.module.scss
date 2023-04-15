@@ -1,0 +1,17 @@
+.layout {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		// &--show {
+		// 	padding-top: 92px;
+		// 	// @include media-breakpoint-up(lg) {
+		// 	// 	padding-top: 140px;
+		// 	// }
+		// }
+	}
+}
