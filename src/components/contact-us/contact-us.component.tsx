@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import styles from './contact-us.module.scss';
-import { Input } from '@/components';
+import { FileInput, Input } from '@/components';
 
 interface Props {}
 
@@ -8,6 +8,7 @@ export const ContactUs: React.FC<Props> = () => {
 	const {
 		handleSubmit,
 		control,
+		register,
 		formState: { errors },
 	} = useForm();
 
@@ -39,6 +40,7 @@ export const ContactUs: React.FC<Props> = () => {
 								placeholder='Your email'
 								label='Your email'
 								control={control}
+								type='email'
 							/>
 							<Input
 								name='desciption'
@@ -47,6 +49,34 @@ export const ContactUs: React.FC<Props> = () => {
 								control={control}
 								type='textarea'
 							/>
+
+							<div className='flex gap-4 items-center mb-6'>
+								<input
+									{...register('subscibe')}
+									type='checkbox'
+									name='subscibe'
+									id='subscibe'
+									className='accent-colorPrimary'
+								/>
+								<label
+									htmlFor='subscibe'
+									className='text-white'>
+									Subscribe to newsletter
+								</label>
+							</div>
+
+							<div className='flex justify-between flex-col items-center lg:flex-row gap-6'>
+								<div>
+									<FileInput />
+								</div>
+								<button
+									type='submit'
+									className={
+										styles['contact-us__form-submit']
+									}>
+									submit
+								</button>
+							</div>
 						</form>
 					</div>
 				</div>

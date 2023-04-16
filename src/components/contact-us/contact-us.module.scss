@@ -22,5 +22,9 @@
 		&-desc {
 			@apply text-white  text-[16px] lg:text-[20px] mb-4;
 		}
+
+		&-submit {
+			@apply text-white border-2 border-white h-[40px] w-[123px] flex items-center justify-center rounded-default;
+		}
 	}
 }

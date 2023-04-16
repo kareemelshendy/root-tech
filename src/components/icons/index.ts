@@ -1,3 +1,4 @@
+export { default as AttachIcon } from "./attach-icon";
 export { default as CloseIcon } from "./close-icon";
 export { default as DownArrowIcon } from "./down-arrow-icon";
 export { default as EmailIcon } from "./email-icon";
