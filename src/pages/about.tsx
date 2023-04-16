@@ -1,7 +1,7 @@
 import { GetStaticProps } from 'next';
 
-export default function Home() {
-	return <>home</>;
+export default function About() {
+	return <>ABOUT</>;
 }
 
 export const getStaticProps: GetStaticProps = async () => {

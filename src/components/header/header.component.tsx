@@ -38,7 +38,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 								<ul className={styles['header__menu']}>
 									<li className={styles['header__menu-item']}>
 										<Link
-											href={'home'}
+											href={'/'}
 											className={
 												styles['header__menu-link']
 											}>
@@ -47,7 +47,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 									</li>
 									<li className={styles['header__menu-item']}>
 										<Link
-											href={'home'}
+											href={'/services'}
 											className={
 												styles['header__menu-link']
 											}>
@@ -56,7 +56,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 									</li>
 									<li className={styles['header__menu-item']}>
 										<Link
-											href={'home'}
+											href={'/policy'}
 											className={
 												styles['header__menu-link']
 											}>
@@ -65,7 +65,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 									</li>
 									<li className={styles['header__menu-item']}>
 										<Link
-											href={'home'}
+											href={'/about'}
 											className={
 												styles['header__menu-link']
 											}>
