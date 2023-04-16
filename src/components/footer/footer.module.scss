@@ -1,19 +1,73 @@
-.footer{
-    @apply py-[42px] bg-colorPrimary;
+.footer {
+	@apply py-[42px] bg-colorPrimary;
 
+	&__top {
+		@apply flex flex-col md:flex-row items-center justify-between border-b-2 border-white;
 
-    &__top{
-        @apply flex flex-col md:flex-row items-center justify-between border-b-2 border-white;
+		&-title {
+			@apply text-[20px] leading-[26px] text-center mb-8 md:mb-0 md:text-left text-white font-normal;
+		}
 
-        &-title{
-            @apply text-[20px] leading-[26px] text-center mb-8 md:mb-0 md:text-left text-white font-normal
-        }
+		&-contact {
+			&-item {
+				@apply flex items-center  md:text-left md:justify-start gap-3 text-white text-[16px] mb-3;
+			}
+		}
+	}
 
-        &-contact{
-            &-item{
-                @apply flex items-center justify-center text-center md:text-left md:justify-start gap-3 text-white text-[16px] mb-3
+	&__body {
+		@apply py-9 flex flex-col items-center md:items-start md:flex-row justify-between;
+	}
+
+	&__nav {
+		@apply mb-4 md:mb-0;
+
+		&-title {
+			@apply text-2xl text-center md:text-left  font-extrabold text-white mb-2;
+		}
+
+		&-menu {
+		}
+
+		&-item {
+			@apply mb-2 text-center md:text-left;
+		}
+
+		&-link {
+			@apply text-white  text-[16px] leading-7 font-medium;
+		}
+	}
+
+	&__help {
+		@apply lg:py-[32px] lg:pr-[80px];
+
+		&-title {
+			@apply text-[28px] text-center font-extrabold mb-4 text-white;
+		}
+		&-link {
+			@apply py-[10px] px-[25px] text-white bg-transparent border-2 border-white rounded-default;
+		}
+	}
+
+	&__bottom {
+		@apply bg-[#0D3C60];
+
+		&-wrapper {
+			@apply container flex flex-col items-center gap-3 md:flex-row justify-between text-white py-[13px];
+		}
+
+		&-copy {
+			@apply text-center md:text-left;
+		}
+
+		&-social {
+			@apply flex gap-[8px];
+
+            &-link{
+                @apply text-[17px]
             }
-        }
-        
-    }
+		}
+
+
+	}
 }
