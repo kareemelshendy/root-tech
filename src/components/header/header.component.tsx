@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
-import { HeaderTop } from '@/components';
+import { HeaderTop, TogglerIcon } from '@/components';
 interface Props {
 	isWhite?: boolean;
 }
@@ -28,10 +28,8 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 						<div className={styles['header__menu-wrapper']}>
 							{/* logo */}
 							<Link href={'/'} className={styles['header__logo']}>
-								<span className={styles['header__logo-icon']}>
-									{/* <LogoIcon /> */}
-									<img src='./images/logo.svg' alt='' />
-								</span>
+								{/* <LogoIcon /> */}
+								<img src='./images/logo.svg' alt='' />
 							</Link>
 							{/* menu */}
 							<nav>
@@ -102,11 +100,11 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							{/* </button> */}
 						</div>
 
-						{/* <button
+						<button
 							className={styles['header__toggle-button']}
-							onClick={() => setShowMenu && setShowMenu(true)}>
+							onClick={() => {}}>
 							<TogglerIcon />
-						</button> */}
+						</button>
 					</div>
 					{/* left */}
 					<div></div>

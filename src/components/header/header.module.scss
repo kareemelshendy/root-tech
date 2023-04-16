@@ -30,8 +30,8 @@
 		}
 	}
 
-	&__lang{
-		@apply flex items-center gap-1
+	&__lang {
+		@apply flex items-center gap-1;
 	}
 
 	&__wrapper {
@@ -45,8 +45,8 @@
 	&__logo {
 		@apply flex items-center gap-2;
 
-		&-icon {
-			@apply text-[45px];
+		img {
+			@apply w-[130px] sm:w-[187px];
 		}
 
 		&-text {
@@ -119,7 +119,7 @@
 		}
 
 		&-button {
-			@apply md:hidden text-[27px] text-white;
+			@apply md:hidden text-[27px] text-black;
 		}
 
 		#{$parent}__white & {
