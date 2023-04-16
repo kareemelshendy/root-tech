@@ -10,12 +10,15 @@ interface Props extends HTMLProps<HTMLDivElement> {
 
 export const NavLink: React.FC<Props> = ({ className, href, children }) => {
 	const { pathname } = useRouter();
+
 	return (
 		<Link
 			href={href}
 			className={`${styles['link']} ${
 				pathname === href ? styles['link--active'] : ''
-			} ${className ? className : ''}`.trim()}>
+			} ${className ? className : ''} ${
+				pathname === '/contact-us' ? styles['link--white'] : ''
+			}`.trim()}>
 			{children}
 		</Link>
 	);

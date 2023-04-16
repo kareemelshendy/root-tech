@@ -14,7 +14,7 @@ interface Props {
 }
 
 export const Header: React.FC<Props> = ({ isWhite = false }) => {
-	const router = useRouter();
+	const { pathname } = useRouter();
 	const { showMenu, setShowMenu } = useToggleMenu();
 
 	// const { showMenu, setShowMenu } = useToggleMenu();
@@ -25,7 +25,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 			<HeaderTop />
 			<header
 				className={`${styles['header']} ${
-					isWhite ? styles['header__white'] : ''
+					pathname === '/contact-us' ? styles['header__white'] : ''
 				} ${
 					isStickyHeader ? styles['header__white--active'] : ''
 				}`.trim()}>
@@ -36,7 +36,17 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							{/* logo */}
 							<Link href={'/'} className={styles['header__logo']}>
 								{/* <LogoIcon /> */}
-								<img src='./images/logo.svg' alt='' />
+								{pathname === '/contact-us' ? (
+									<img
+										src='./images/footer-logo.svg'
+										alt='I Root Tech'
+									/>
+								) : (
+									<img
+										src='./images/logo.svg'
+										alt='I Root Tech'
+									/>
+								)}
 							</Link>
 							{/* menu */}
 							<nav>
@@ -66,7 +76,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 						{/* left */}
 						<div className={styles['header__actions']}>
 							<Link
-								href='#'
+								href='/contact-us'
 								className={styles['header__actions-button']}>
 								Contact Us
 							</Link>

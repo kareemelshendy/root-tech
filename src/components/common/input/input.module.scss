@@ -1,0 +1,19 @@
+.input {
+	@apply w-full outline-none bg-colorGray px-[16px] h-[45px] lg:h-[67px] text-base rounded-default lg:text-[20px] lg:leading-[20px] text-black mb-[24px];
+
+	&::placeholder {
+		@apply text-[#8D8D8D] font-[16px];
+	}
+}
+
+.textarea {
+	@apply w-full outline-none bg-colorGray p-4 rounded-default text-[16px] lg:text-[20px] leading-[20px] text-black mb-[24px] h-[110px] resize-none;
+
+	&::placeholder {
+		@apply text-[#8D8D8D] font-[16px];
+	}
+}
+
+.label {
+	@apply text-[20px] text-white mb-[9px] block;
+}

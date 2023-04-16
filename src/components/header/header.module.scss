@@ -3,22 +3,22 @@
 .header {
 	$parent: &;
 	@apply py-3;
+	z-index: 100;
 
-	&__white {
-		z-index: 99;
-		transition-duration: 1s;
-		@apply fixed -top-full right-0 left-0 bg-white opacity-0 shadow-default;
-
-		&--active {
-			@apply top-0 opacity-100;
-		}
+	&--white {
+		@apply text-white;
 	}
 
 	&__top {
 		@apply container;
+		z-index: 100;
 
 		&-wrapper {
 			@apply border-b border-colorPrimary hidden md:flex justify-between items-center py-[12px];
+		}
+
+		&--white {
+			@apply text-white;
 		}
 
 		&-content {
@@ -31,15 +31,11 @@
 	}
 
 	&__lang {
-		@apply flex items-center gap-1;
+		@apply flex items-center gap-1 text-inherit;
 	}
 
 	&__wrapper {
 		@apply flex items-center justify-between  text-white w-full;
-
-		#{$parent}__white & {
-			@apply text-colorPrimary;
-		}
 	}
 
 	&__logo {
@@ -118,7 +114,7 @@
 
 		#{$parent}__white & {
 			&-button {
-				@apply text-colorPrimary;
+				@apply text-white;
 			}
 		}
 

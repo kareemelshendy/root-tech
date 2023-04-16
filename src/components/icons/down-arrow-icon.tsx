@@ -3,6 +3,7 @@ import { SVGProps, memo } from "react";
 const SvgDownArrowIcon = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
+    fill="currentColor"
     viewBox="0 0 512 512"
     width="1em"
     height="1em"

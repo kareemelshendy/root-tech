@@ -5,3 +5,4 @@ export { Footer } from './footer/footer.component';
 export { HeaderTop } from './header/header-top.comonent';
 export { HeaderToggleMenu } from './header/header-toggle-menu.component';
 export { About } from './about/about.component';
+export { ContactUs } from './contact-us/contact-us.component';

@@ -1,0 +1,26 @@
+.contact-us {
+	&__bg {
+		@apply -mt-[120px] pt-[136px] h-[976px] bg-[url('/images/contact-us-bg.jpg')];
+	}
+
+	&__form {
+		&-wrapper {
+			background: linear-gradient(
+					0deg,
+					rgba(0, 0, 0, 0.4),
+					rgba(0, 0, 0, 0.4)
+				),
+				rgba(255, 255, 255, 0.34);
+			backdrop-filter: blur(20px);
+			@apply p-4 lg:py-[46px] lg:px-[59px] rounded-default;
+		}
+
+		&-title {
+			@apply text-white text-[30px] lg:text-[55px] font-bold;
+		}
+
+		&-desc {
+			@apply text-white  text-[16px] lg:text-[20px] mb-4;
+		}
+	}
+}
