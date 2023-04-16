@@ -2,13 +2,20 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
-import { HeaderTop, TogglerIcon } from '@/components';
+import {
+	HeaderToggleMenu,
+	HeaderTop,
+	NavLink,
+	TogglerIcon,
+} from '@/components';
+import { useToggleMenu } from '@/context';
 interface Props {
 	isWhite?: boolean;
 }
 
 export const Header: React.FC<Props> = ({ isWhite = false }) => {
 	const router = useRouter();
+	const { showMenu, setShowMenu } = useToggleMenu();
 
 	// const { showMenu, setShowMenu } = useToggleMenu();
 	const [isStickyHeader, setIsStickyHeader] = useState(false);
@@ -35,40 +42,22 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							<nav>
 								<ul className={styles['header__menu']}>
 									<li className={styles['header__menu-item']}>
-										<Link
-											href={'/'}
-											className={
-												styles['header__menu-link']
-											}>
-											Home
-										</Link>
+										<NavLink href='/'>Home</NavLink>
 									</li>
 									<li className={styles['header__menu-item']}>
-										<Link
-											href={'/services'}
-											className={
-												styles['header__menu-link']
-											}>
+										<NavLink href='/services'>
 											Services
-										</Link>
+										</NavLink>
 									</li>
 									<li className={styles['header__menu-item']}>
-										<Link
-											href={'/policy'}
-											className={
-												styles['header__menu-link']
-											}>
+										<NavLink href='/policy'>
 											Policies
-										</Link>
+										</NavLink>
 									</li>
 									<li className={styles['header__menu-item']}>
-										<Link
-											href={'/about'}
-											className={
-												styles['header__menu-link']
-											}>
-											About us
-										</Link>{' '}
+										<NavLink href='/about'>
+											About Us
+										</NavLink>
 									</li>
 								</ul>
 							</nav>
@@ -79,7 +68,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							<Link
 								href='#'
 								className={styles['header__actions-button']}>
-								contact us
+								Contact Us
 							</Link>
 
 							{/* <button> */}
@@ -102,14 +91,13 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 
 						<button
 							className={styles['header__toggle-button']}
-							onClick={() => {}}>
+							onClick={() => setShowMenu && setShowMenu(true)}>
 							<TogglerIcon />
 						</button>
 					</div>
-					{/* left */}
-					<div></div>
 				</div>
 			</header>
+			<HeaderToggleMenu />
 		</>
 	);
 };

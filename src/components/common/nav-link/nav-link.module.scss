@@ -1,0 +1,7 @@
+.link {
+	@apply text-[20px] leading-[41px] w-[73px]  font-[500] relative duration-300 hover:text-colorPrimary  text-black;
+
+	&--active {
+		@apply text-colorPrimary font-semibold;
+	}
+}

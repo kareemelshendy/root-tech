@@ -66,14 +66,6 @@
 			@apply flex items-center;
 		}
 
-		&-link {
-			@apply text-[20px] leading-[41px] w-[73px]  font-[500] relative duration-300 hover:text-colorPrimary  text-black;
-
-			&--active {
-				@apply before:absolute before:content-['']  before:-bottom-2 before:w-[28px] before:h-[1px] before:bg-white flex justify-center before:opacity-100 before:duration-300;
-			}
-		}
-
 		#{$parent}__white & {
 			&-link {
 				&--active {
@@ -98,7 +90,7 @@
 	&__toggle {
 		&-wrapper {
 			z-index: 100;
-			@apply fixed top-0 right-0 left-0 h-[548px] bg-white p-[30px] -translate-y-full duration-300 ease-out;
+			@apply fixed top-0 right-0 left-0 h-[400px] bg-white p-[30px] -translate-y-full duration-300 ease-out;
 
 			&--show {
 				@apply translate-y-0;
@@ -111,9 +103,11 @@
 		}
 
 		&-dropshadow {
+			pointer-events: none;
 			@apply fixed top-0 right-0 left-0 bottom-0;
 
 			&--show {
+				pointer-events: all;
 				@apply bg-black/25;
 			}
 		}
@@ -130,7 +124,7 @@
 
 		&-menu {
 			&-item {
-				@apply mb-[48px] text-[26px] leading-[22px] font-bold;
+				@apply mb-[20px] text-[26px] leading-[22px] font-bold;
 			}
 		}
 
