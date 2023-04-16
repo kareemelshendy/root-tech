@@ -2,7 +2,7 @@
 	@apply py-8;
 
 	&__title {
-		@apply text-center font-extrabold  text-[32px] lg:text-[64px];
+		@apply text-center font-extrabold  text-[32px] md:text-[50px] lg:text-[64px];
 	}
 
 	&__desc {
@@ -14,7 +14,7 @@
 	}
 
 	&__vision {
-		@apply relative lg:mb-[113px] min-h-[527px];
+		@apply relative mb-[32px] lg:mb-[113px] min-h-[450px] md:min-h-[570px];
 
 		&-wrapper {
 			@apply container flex flex-col-reverse  items-center lg:flex-row;
@@ -24,7 +24,7 @@
 			@apply w-full lg:w-1/2 lg:pr-5;
 
 			&-title {
-				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-[32px];
+				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-4 lg:mb-[32px];
 			}
 
 			&-desc {
@@ -48,7 +48,7 @@
 			@apply w-full lg:w-1/2 lg:pl-10 mb-8  lg:mb-0;
 
 			&-title {
-				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-[32px]
+				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-4 lg:mb-[32px]
 			}
 
 			&-desc {
