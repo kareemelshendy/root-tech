@@ -1,0 +1,63 @@
+.about {
+	@apply py-8;
+
+	&__title {
+		@apply text-center font-extrabold  text-[32px] lg:text-[64px];
+	}
+
+	&__desc {
+		@apply text-center text-[18px] lg:text-[28px] lg:leading-[36px] mb-6;
+	}
+
+	&__img {
+		@apply w-full h-[484px]  bg-[url('/images/about.png')] mb-[50px] lg:mb-[155px];
+	}
+
+	&__vision {
+		@apply relative lg:mb-[113px] min-h-[527px];
+
+		&-wrapper {
+			@apply container flex flex-col-reverse  items-center lg:flex-row;
+		}
+
+		&-content {
+			@apply w-full lg:w-1/2 lg:pr-5;
+
+			&-title {
+				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-[32px];
+			}
+
+			&-desc {
+				@apply text-center lg:text-left text-[20px] md:text-[28px];
+			}
+		}
+
+		&-img {
+			@apply w-full h-[200px] mb-8  lg:mb-0 lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:-right-4;
+		}
+	}
+
+	&__mission {
+		@apply relative mb-[119px];
+
+		&-wrapper {
+			@apply container flex flex-col-reverse  items-center lg:flex-row-reverse;
+		}
+
+		&-content {
+			@apply w-full lg:w-1/2 lg:pl-10 mb-8  lg:mb-0;
+
+			&-title {
+				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-[32px]
+			}
+
+			&-desc {
+				@apply text-center lg:text-left text-[20px] md:text-[28px];
+			}
+		}
+
+		&-img {
+			@apply w-full h-[200px]  lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:left-0;
+		}
+	}
+}
