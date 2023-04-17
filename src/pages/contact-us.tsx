@@ -6,7 +6,7 @@ export default function ContactUsPage() {
 	return (
 		<>
 			<Head>
-				<title>Contact US</title>
+				<title>I Root Tech | Contact US</title>
 			</Head>
 			<ContactUs />
 		</>

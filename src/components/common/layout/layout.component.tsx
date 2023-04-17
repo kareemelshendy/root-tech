@@ -9,9 +9,9 @@ export const Layout: React.FC<Props> = ({ children }) => {
 	const [showMenu, setShowMenu] = useState<boolean | undefined>(false);
 	return (
 		<>
-			<Head>
+			{/* <Head>
 				<title>{'title'}</title>
-			</Head>
+			</Head> */}
 			<div className={styles['layout']}>
 				{/* <CurrentUserHOC /> */}
 				<ToggleMenu.Provider

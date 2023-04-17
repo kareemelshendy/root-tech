@@ -27,4 +27,30 @@
 			@apply text-white border-2 border-white h-[40px] w-[123px] flex items-center justify-center rounded-default;
 		}
 	}
+
+	&__info {
+		@apply container flex flex-col lg:flex-row items-center gap-[38px] py-[101px];
+	}
+
+	&__title {
+		@apply text-[30px] lg:text-[64px] text-[#0A0C0D] font-bold;
+	}
+
+	&__desc {
+		@apply lg:w-[450px] text-[24px] font-semibold mb-[35px];
+	}
+
+	&__contacts {
+		&-title {
+			@apply text-[30px] lg:text-[36px] text-colorPrimary font-bold mb-[13px];
+		}
+
+		&-item {
+			@apply flex items-center gap-[16px] text-colorPrimary mb-2;
+		}
+	}
+
+	&__map {
+		@apply w-full lg:w-1/2;
+	}
 }
