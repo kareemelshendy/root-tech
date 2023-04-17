@@ -1,0 +1,15 @@
+.services {
+	@apply py-8;
+
+	&__title {
+		@apply text-center font-extrabold  text-[32px] md:text-[50px] lg:text-[64px];
+	}
+
+	&__desc {
+		@apply text-center text-[18px] lg:text-[28px] lg:leading-[36px] mb-6;
+	}
+
+    &__img {
+		@apply w-full h-[334px]  bg-[url('/images/services-bg.png')] mb-[50px] lg:mb-[155px];
+	}
+}

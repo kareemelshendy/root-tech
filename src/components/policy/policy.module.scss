@@ -1,14 +1,13 @@
 .policy {
 	@apply container py-[50px];
 
-    &__last-update{
-        @apply  text-[20px] font-semibold mb-4 block
-    }
+	&__last-update {
+		@apply text-center lg:text-left text-sm  lg:text-[20px] font-semibold mb-4 block;
+	}
 	&__title {
 		@apply text-center lg:text-left text-[32px] lg:text-[64px] font-extrabold;
 	}
 	&__desc {
 		@apply mb-6  text-[18px] lg:text-2xl text-center lg:text-left;
 	}
-
 }
