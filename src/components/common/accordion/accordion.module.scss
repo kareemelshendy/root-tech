@@ -1,0 +1,17 @@
+.accordion {
+	@apply mb-[20px];
+    
+	&__button {
+		@apply w-full flex justify-between items-center font-bold text-[18px] lg:text-[36px];
+
+		&-text {
+			white-space: nowrap;
+			overflow: hidden;
+			text-overflow: ellipsis;
+		}
+	}
+
+	&__content {
+		@apply h-0 overflow-hidden duration-150 text-base lg:text-2xl;
+	}
+}
