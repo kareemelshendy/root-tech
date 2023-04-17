@@ -1,4 +1,6 @@
+import { Tabs } from '@/components';
 import styles from './services.module.scss';
+
 interface Props {}
 
 export const Services: React.FC<Props> = () => {
@@ -25,6 +27,9 @@ export const Services: React.FC<Props> = () => {
 				</p>
 			</div>
 			<div className={styles['services__img']}></div>
+			<div className='container'>
+				<Tabs />
+			</div>
 		</section>
 	);
 };

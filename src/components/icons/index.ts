@@ -7,6 +7,7 @@ export { default as InstagramIcon } from "./instagram-icon";
 export { default as LanguageIcon } from "./language-icon";
 export { default as LinkedinIcon } from "./linkedin-icon";
 export { default as LocationIcon } from "./location-icon";
+export { default as MobileIcon } from "./mobile-icon";
 export { default as PhoneIcon } from "./phone-icon";
 export { default as TogglerIcon } from "./toggler-icon";
 export { default as TwitterIcon } from "./twitter-icon";
