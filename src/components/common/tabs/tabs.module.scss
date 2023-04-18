@@ -22,7 +22,7 @@
 		@apply bg-[#F6F6F6]  rounded-default h-full;
 
 		&-img {
-			@apply w-full h-[276px];
+			@apply w-full h-[276px] object-cover rounded-tl-default rounded-tr-default;
 		}
 
 		&-content {
