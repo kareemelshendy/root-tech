@@ -17,7 +17,7 @@
 		@apply container;
 
 		&-title {
-			@apply text-[18px] lg:text-[64px] font-bold mb-5;
+			@apply text-[24px] lg:text-[64px] font-bold mb-5;
 		}
 
 		&-subtitle {
@@ -32,7 +32,7 @@
 		}
 
 		&-content {
-			@apply flex flex-col lg:flex-row;
+			@apply flex flex-col lg:flex-row items-start;
 
 			&-img {
 				@apply w-full lg:w-1/2;

@@ -15,6 +15,33 @@ export const Services: React.FC<Props> = () => {
 		'Support , Monitoring .',
 		`Analytics , BI ,ETL's ,DWH .`,
 	];
+
+	const networkItems = [
+		'Secure design and architecture assessment',
+		'Firewalls [Cisco, Palo Alto, Fortinet ...] ',
+		'Micro segmentation .',
+		'Provide SOC services .',
+		'Denial of service attacks (DDOS) mitigation setup and management (CloudFlare, Arbor, ...) .',
+		'Jump Server management and setup (CyberArk, Centrify).',
+		'Penetration Testing services .',
+		'Endpoint Security .',
+		'Endpoint Detection and Response (EDR) (CrowdStrike, KasperSky, ...).',
+		'Endpoint and Mobile Devices Protection Platforms .',
+		' NextGen SIEM OT and IOT Security . ',
+		'LAN , WAN design , Routing , Switching.',
+		'OSPF, EIGRP,BGP,VoIP.',
+		'VLANs, Spanning-tree ,IPSec Tunnels: IKEv1, IKEv2, DMVPN , SDWAN .',
+	];
+
+	const osItems = [
+		'Operating system management Linux , Windows . Virtual environment setup and management (HyperV, VMWare) .',
+		'Storage management and day to day operations .',
+		'SAN Switch setup and administration including zoning .',
+		'LUN creation and OS mapping (Windows, Linux) .',
+		'Active Directory .',
+		'DHCP & DNS . Microsoft O365 setup and management .',
+		'Support and maintenance ,Remote Help-Desk .',
+	];
 	return (
 		<section className={styles['services']}>
 			<div className='container'>
@@ -47,7 +74,7 @@ export const Services: React.FC<Props> = () => {
 					We also <span className='text-colorPrimary'>offering</span>
 				</h2>
 
-				<div>
+				<div className='mb-[50px] lg:mb-[85px]'>
 					<h3 className={styles['services__offers-subtitle']}>
 						<span className={styles['services__offers-number']}>
 							1
@@ -78,6 +105,92 @@ export const Services: React.FC<Props> = () => {
 							className={styles['services__offers-content-img']}
 						/>
 					</div>
+				</div>
+
+				<div className='flex  flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
+					<img src='/images/oracle.png' alt='Oracle' />
+					<img src='/images/sql.png' alt='' />
+					<img src='/images/postget-sql.png' alt='' />
+				</div>
+
+				<div className='mb-[50px] lg:mb-[85px]'>
+					<h3 className={styles['services__offers-subtitle']}>
+						<span className={styles['services__offers-number']}>
+							2
+						</span>{' '}
+						Security & Networks
+					</h3>
+					<p className={styles['services__offers-desc']}>
+						The Expertise that our team possesses embraces a wide
+						range of custom services. Providing advanced network
+						performance and security solutions. Involving the latest
+						and most effective development technologies.
+					</p>
+
+					<div className={styles['services__offers-content']}>
+						<ul className={styles['services__offers-list']}>
+							{networkItems.map((item, index) => (
+								<li
+									key={index}
+									className={
+										styles['services__offers-list-item']
+									}>
+									{item}
+								</li>
+							))}
+						</ul>
+						<img
+							src='/images/security.png'
+							alt='DataBase'
+							className={styles['services__offers-content-img']}
+						/>
+					</div>
+				</div>
+
+				<div className='flex  flex-wrap justify-between items-center gap-8 mb-[50px] lg:mb-[85px]'>
+					<img src='/images/cisco.png' alt='Oracle' />
+					<img src='/images/kaspersky.png' alt='' />
+					<img src='/images/fortinet.png' alt='' />
+					<img src='/images/paloalto.png' alt='' />
+				</div>
+
+				<div className='mb-[50px] lg:mb-[85px]'>
+					<h3 className={styles['services__offers-subtitle']}>
+						<span className={styles['services__offers-number']}>
+							3
+						</span>{' '}
+						OS (Operation System)
+					</h3>
+					<p className={styles['services__offers-desc']}>
+						Let Us support and configure your IT structure
+						24\7,start your work efficiently and effectively and
+						achieve your productivity goals without stopping.
+					</p>
+
+					<div className={styles['services__offers-content']}>
+						<ul className={styles['services__offers-list']}>
+							{osItems.map((item, index) => (
+								<li
+									key={index}
+									className={
+										styles['services__offers-list-item']
+									}>
+									{item}
+								</li>
+							))}
+						</ul>
+						<img
+							src='/images/os.png'
+							alt='DataBase'
+							className={styles['services__offers-content-img']}
+						/>
+					</div>
+				</div>
+
+				<div className='flex  flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
+					<img src='/images/oracle.png' alt='Oracle' />
+					<img src='/images/redhat.png' alt='' />
+					<img src='/images/windows-server.png' alt='' />
 				</div>
 			</div>
 		</section>
