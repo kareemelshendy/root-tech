@@ -1,0 +1,40 @@
+.tabs {
+	$root: &;
+	@apply flex flex-col lg:flex-row gap-[19px];
+
+	&__list {
+		@apply flex flex-row lg:flex-col gap-[16px] lg:gap-[21px] overflow-x-auto lg:overflow-x-visible;
+	}
+
+	&__tab {
+		@apply border-0 cursor-pointer flex  justify-center items-center lg:justify-start gap-[11px] text-black py-[16px] lg:py-[20px] rounded-default px-[12px] lg:px-[17px] text-[16px] font-medium lg:text-[28px] lg:font-bold bg-[#F6F6F6] w-[397px] focus-within:border-none focus-within:outline-none min-w-[200px] lg:min-w-full;
+
+		&-icon {
+			@apply hidden  h-[70px] w-[70px] rounded-full lg:flex items-center justify-center bg-white text-black text-[42px];
+		}
+
+		&--selected & {
+			@apply bg-colorPrimary;
+		}
+	}
+
+	&__panel {
+		@apply bg-[#F6F6F6]  rounded-default h-full;
+
+		&-img {
+			@apply w-full h-[276px];
+		}
+
+		&-content {
+			@apply px-[32px] py-[18px];
+
+			&-text {
+				@apply text-colorPrimary text-base lg:text-2xl font-semibold mb-[20px];
+			}
+
+			&-tech {
+				@apply flex justify-between items-center flex-wrap;
+			}
+		}
+	}
+}

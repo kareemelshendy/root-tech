@@ -40,3 +40,8 @@ html {
 	margin-inline: auto;
 	@apply font-bold text-base md:text-[20px] text-center leading-[38px] text-colorHeading mb-6 md:mb-[48px] max-w-[544px];
 }
+
+
+.tabs-selected{
+	@apply bg-colorPrimary text-white #{!important} 
+}
