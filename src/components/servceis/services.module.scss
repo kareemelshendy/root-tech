@@ -32,7 +32,7 @@
 		}
 
 		&-content {
-			@apply flex flex-col lg:flex-row items-start;
+			@apply flex flex-col lg:flex-row items-start  lg:gap-[47px];
 
 			&-img {
 				@apply w-full lg:w-1/2;
@@ -40,7 +40,7 @@
 		}
 
 		&-list {
-			@apply w-full lg:w-1/2 list-disc pl-4 mb-4;
+			@apply w-full lg:w-1/2 list-disc pl-4 mb-8;
 
 			&-item {
 				@apply text-base lg:text-2xl;

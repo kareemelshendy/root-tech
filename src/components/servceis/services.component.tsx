@@ -147,7 +147,7 @@ export const Services: React.FC<Props> = () => {
 					</div>
 				</div>
 
-				<div className='flex  flex-wrap justify-between items-center gap-8 mb-[50px] lg:mb-[85px]'>
+				<div className='flex flex-wrap justify-center lg:justify-between items-center gap-8 mb-[50px] lg:mb-[85px]'>
 					<img src='/images/cisco.png' alt='Oracle' />
 					<img src='/images/kaspersky.png' alt='' />
 					<img src='/images/fortinet.png' alt='' />
@@ -187,7 +187,7 @@ export const Services: React.FC<Props> = () => {
 					</div>
 				</div>
 
-				<div className='flex  flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
+				<div className='flex flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
 					<img src='/images/oracle.png' alt='Oracle' />
 					<img src='/images/redhat.png' alt='' />
 					<img src='/images/windows-server.png' alt='' />
