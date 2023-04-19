@@ -33,7 +33,7 @@
 		}
 
 		&-img {
-			@apply w-full h-[200px] mb-8  lg:mb-0 lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:-right-0;
+			@apply w-full h-[200px] mb-8  lg:mb-0 lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:-right-0 object-cover;
 		}
 	}
 
@@ -57,7 +57,7 @@
 		}
 
 		&-img {
-			@apply w-full h-[200px]  lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:left-0;
+			@apply w-full h-[200px]  lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:left-0 object-cover;
 		}
 	}
 }

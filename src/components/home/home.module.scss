@@ -1,32 +1,56 @@
 .home {
-	@apply container;
+	@apply container mb-[64px];
 
 	&__subtitle {
-		@apply text-[24px] lg:text-[64px] font-bold mb-5;
+		@apply text-[24px] md:text-[50px] lg:text-[64px] font-bold mb-5;
+	}
+
+	&__about {
+		@apply relative top-0 mb-[32px]  min-h-[450px] md:min-h-[570px];
+
+		&-wrapper {
+			@apply container flex flex-col-reverse  items-center lg:flex-row;
+		}
+
+		&-content {
+			@apply w-full lg:w-1/2 lg:pr-5;
+
+			&-title {
+				@apply text-center lg:text-left text-3xl md:text-[50px] lg:text-[64px] font-bold mb-4 lg:mb-[32px];
+			}
+
+			&-desc {
+				@apply text-center lg:text-left text-[20px] md:text-[28px];
+			}
+		}
+
+		&-img {
+			@apply w-full h-[200px] mb-8  lg:mb-0 lg:w-1/2 md:h-[400px] lg:h-[527px] lg:absolute lg:-right-0 object-cover;
+		}
 	}
 
 	&__offers {
 		&-card {
-			@apply py-[38px] px-[18px] bg-[#F6F6F6] rounded-default h-[623px] mb-6;
+			@apply py-4 lg:py-[38px] px-[18px] bg-[#F6F6F6] rounded-tl-default rounded-tr-default md:min-h-[500px] lg:min-h-0 lg:h-[678px] xl:h-[623px] mb-6 border-b-2 border-colorPrimary;
 
 			&-wrapper {
 				@apply columns-1 md:columns-3 mt-4;
 			}
 
 			&-icon {
-				@apply text-[40px] lg:text-[90px] text-colorPrimary mb-2 block;
+				@apply text-[40px]  lg:text-[90px] text-colorPrimary mb-2 block;
 			}
 
 			&-title {
-				@apply text-[24px] lg:text-[36px] text-colorPrimary font-bold;
+				@apply text-[24px]  lg:text-[36px] text-colorPrimary font-bold;
 			}
 
 			&-desc {
-				@apply text-[16px] lg:text-[24px] text-colorPrimary mb-6;
+				@apply text-[16px] lg:text-[24px] text-colorPrimary mb-4;
 			}
 
 			&-imgs {
-				@apply flex  flex-wrap justify-around items-center gap-2 space-y-4;
+				@apply flex  flex-wrap justify-around items-center gap-2 space-y-2;
 			}
 		}
 	}
