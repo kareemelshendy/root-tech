@@ -7,7 +7,7 @@
 
 	&__offers {
 		&-card {
-			@apply py-[38px] px-[18px] bg-[#F6F6F6] rounded-default h-[623px];
+			@apply py-[38px] px-[18px] bg-[#F6F6F6] rounded-default h-[623px] mb-6;
 
 			&-wrapper {
 				@apply columns-1 md:columns-3 mt-4;
