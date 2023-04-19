@@ -5,6 +5,14 @@
 		@apply text-[24px] md:text-[50px] lg:text-[64px] font-bold mb-5;
 	}
 
+	&__hero {
+		@apply mb-[113px]  pt-[32px];
+
+        &-wrapper{
+            @apply container
+        }
+	}
+
 	&__about {
 		@apply relative top-0 mb-[32px]  min-h-[450px] md:min-h-[570px];
 
