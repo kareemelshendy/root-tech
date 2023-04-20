@@ -1,9 +1,7 @@
-import { useForm } from 'react-hook-form';
 import styles from './contact-us.module.scss';
 import {
+	ContactUsForm,
 	EmailIcon,
-	FileInput,
-	Input,
 	LocationIcon,
 	PhoneIcon,
 } from '@/components';
@@ -12,16 +10,6 @@ import Link from 'next/link';
 interface Props {}
 
 export const ContactUs: React.FC<Props> = () => {
-	const {
-		handleSubmit,
-		control,
-		register,
-		formState: { errors },
-	} = useForm();
-
-	const onSubmit = (data: any) => {
-		console.log('data', data);
-	};
 	return (
 		<div className={styles['contact-us']}>
 			<div className={styles['contact-us__bg']}>
@@ -35,62 +23,13 @@ export const ContactUs: React.FC<Props> = () => {
 							start-up business to well-established businesses
 						</p>
 
-						<form onSubmit={handleSubmit(onSubmit)}>
-							<Input
-								name='name'
-								placeholder='Your name'
-								label='Your name'
-								control={control}
-							/>
-							<Input
-								name='email'
-								placeholder='Your email'
-								label='Your email'
-								control={control}
-								type='email'
-							/>
-							<Input
-								name='desciption'
-								placeholder='Description of your project'
-								label='Desciption'
-								control={control}
-								type='textarea'
-							/>
-
-							<div className='flex gap-4 items-center mb-6'>
-								<input
-									{...register('subscibe')}
-									type='checkbox'
-									name='subscibe'
-									id='subscibe'
-									className='accent-colorPrimary'
-								/>
-								<label
-									htmlFor='subscibe'
-									className='text-white'>
-									Subscribe to newsletter
-								</label>
-							</div>
-
-							<div className='flex justify-between flex-col items-center lg:flex-row gap-6'>
-								<div>
-									<FileInput />
-								</div>
-								<button
-									type='submit'
-									className={
-										styles['contact-us__form-submit']
-									}>
-									submit
-								</button>
-							</div>
-						</form>
+						<ContactUsForm />
 					</div>
 				</div>
 			</div>
 
 			<div className={styles['contact-us__info']}>
-				<div className='s-full lg:w-1/2'>
+				<div className='w-full lg:w-1/2'>
 					<h3 className={styles['contact-us__title']}>
 						Get in touch
 					</h3>

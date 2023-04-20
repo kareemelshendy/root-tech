@@ -1,5 +1,6 @@
 import { Control, Controller, FieldValues } from 'react-hook-form';
 import styles from './input.module.scss';
+import { useRouter } from 'next/router';
 
 interface Props {
 	name: string;
@@ -18,6 +19,10 @@ export const Input: React.FC<Props> = ({
 	defaultValue = '',
 	label,
 }) => {
+	const { pathname } = useRouter();
+
+	console.log('pathname', pathname);
+
 	return (
 		<Controller
 			name={name}
@@ -25,7 +30,11 @@ export const Input: React.FC<Props> = ({
 			defaultValue={defaultValue}
 			render={({ field, formState: { errors } }) => (
 				<>
-					<label className={styles['label']} htmlFor={name}>
+					<label
+						className={` ${styles['label']} ${
+							pathname === '/' ? styles['label--black'] : ''
+						}`}
+						htmlFor={name}>
 						{label}
 					</label>
 					{type === 'textarea' ? (

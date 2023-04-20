@@ -1,10 +1,14 @@
 /* eslint-disable @next/next/no-img-element */
 import {
 	ClockIcon,
+	ContactUsForm,
 	DatabaseIcon,
 	DollarCircleIcon,
+	EmailIcon,
+	LocationIcon,
 	LockIcon,
 	PercentageCircleIcon,
+	PhoneIcon,
 	Tabs,
 	WindowsIcon,
 } from '@/components';
@@ -246,6 +250,91 @@ export const Home: React.FC<Props> = () => {
 						className={styles['home__your-projects-link']}>
 						Start your project
 					</Link>
+				</div>
+			</section>
+
+			<section id='contact-us' className={styles['home__countact-us']}>
+				<div className={styles['home__countact-us-wrapper']}>
+					<h2 className={styles['home__countact-us-title']}>
+						Need more help?
+						<br />
+						<span className='text-colorPrimary'>Contact us</span>
+					</h2>
+
+					<div className={styles['home__countact-us-content']}>
+						<div className='w-full lg:w-1/2'>
+							<h3
+								className={
+									styles['home__countact-us-content-title']
+								}>
+								Let&apos;s Talk
+							</h3>
+							<p
+								className={
+									styles['home__countact-us-content-desc']
+								}>
+								We are working with clients of all sizes from
+								new start-up business to well-established
+								businesses
+							</p>
+
+							<h4
+								className={
+									styles[
+										'home__countact-us-content-contacts-title'
+									]
+								}>
+								Contacts
+							</h4>
+
+							<div
+								className={
+									styles['home__countact-us-content-contacts']
+								}>
+								<div
+									className={
+										styles[
+											'home__countact-us-content-contacts-item'
+										]
+									}>
+									<span>
+										<LocationIcon />
+									</span>
+									castroper st 273 44791, Germany ,Bochum
+								</div>
+
+								<div
+									className={
+										styles[
+											'home__countact-us-content-contacts-item'
+										]
+									}>
+									<span>
+										<PhoneIcon />
+									</span>
+									<Link href={'tel:+4915754411184'}>
+										(+49) 157 54411184
+									</Link>
+								</div>
+								<div
+									className={
+										styles[
+											'home__countact-us-content-contacts-item'
+										]
+									}>
+									<span>
+										<EmailIcon />
+									</span>
+									<Link href={'mailto:Info@iroottech.com'}>
+										Info@iroottech.com
+									</Link>
+								</div>
+							</div>
+						</div>
+						<div className='w-full lg:w/12'>
+							<ContactUsForm />
+						</div>
+					</div>
 				</div>
 			</section>
 		</>

@@ -4,3 +4,4 @@ export { Input } from './input/input.component';
 export { FileInput } from './file-input/file-input.component';
 export { Accordion } from './accordion/accordion.component';
 export { Tabs } from './tabs/tabs.component';
+export { ContactUsForm } from './contact-us-form/contact-us-form.component';

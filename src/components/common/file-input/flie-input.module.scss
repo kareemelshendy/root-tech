@@ -1,8 +1,7 @@
 .input {
 	@apply hidden;
 
-    
 	&__label {
-		@apply px-[13px] py-[13.5px] text-[24px] rounded-default bg-[#ECF7FF] flex text-black items-center gap-[12px] w-[168px] h-[58px];
+		@apply px-[13px] py-[13.5px] text-[24px] rounded-default bg-[#ECF7FF] flex text-black items-center gap-[12px] w-[168px] h-[58px] hover:bg-colorPrimary duration-150 hover:text-white;
 	}
 }

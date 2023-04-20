@@ -1,0 +1,9 @@
+.form {
+	&__submit {
+		@apply text-white border-2 border-white py-[13px]  w-[123px] flex items-center justify-center rounded-default text-[24px] hover:bg-colorPrimary duration-150;
+
+        &--primary{
+            @apply border-colorPrimary text-colorPrimary hover:text-white hover:bg-colorPrimary
+        }
+	}
+}
