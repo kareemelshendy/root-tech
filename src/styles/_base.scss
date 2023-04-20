@@ -3,7 +3,7 @@ html {
 	direction: ltr;
 	text-align: left;
 	scroll-behavior: smooth;
-	// @apply 
+	@apply text-[#0A0C0D]
 }
 
 [dir='ltr'] body {
@@ -18,7 +18,7 @@ html {
 	h4,
 	h5,
 	h6 {
-		@apply text-colorHeading;
+		@apply text-[#0A0C0D];
 	}
 }
 

@@ -11,18 +11,28 @@ export const Home: React.FC<Props> = () => {
 			<section className={styles['home__hero']}>
 				<div className={styles['home__hero-wrapper']}>
 					<div className={styles['home__hero-content']}>
-						<h2>
+						<h2 className={styles['home__hero-title']}>
 							Transform your ideas into{' '}
 							<span className='text-colorPrimary'>
 								Exceptional
 							</span>{' '}
 							software solutions
 						</h2>
-						<p>
+						<p className={styles['home__hero-desc']}>
 							Take the next step with your dreams and turn it into
 							reality with us
 						</p>
+
+						<Link href='#' className={styles['home__hero-link']}>
+							Start your project
+						</Link>
 					</div>
+
+					<img
+						src='./images/code.png'
+						alt='Software solutions'
+						className={styles['home__hero-img']}
+					/>
 				</div>
 			</section>
 			<section>
