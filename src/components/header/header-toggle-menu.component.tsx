@@ -23,22 +23,42 @@ export const HeaderToggleMenu = () => {
 
 				<ul className={styles['header__toggle-menu']}>
 					<li className={styles['header__toggle-menu-item']}>
-						<NavLink href={'/'} className='font-bold'>
+						<NavLink
+							href={'/'}
+							className='font-bold'
+							onClick={() => {
+								setShowMenu && setShowMenu(false);
+							}}>
 							Home
 						</NavLink>
 					</li>
 					<li className={styles['header__toggle-menu-item']}>
-						<NavLink href={'/services'} className='font-bold'>
+						<NavLink
+							href={'/services'}
+							className='font-bold'
+							onClick={() => {
+								setShowMenu && setShowMenu(false);
+							}}>
 							Services
 						</NavLink>
 					</li>
 					<li className={styles['header__toggle-menu-item']}>
-						<NavLink href={'/policy'} className='font-bold'>
+						<NavLink
+							href={'/policy'}
+							className='font-bold'
+							onClick={() => {
+								setShowMenu && setShowMenu(false);
+							}}>
 							Policies
 						</NavLink>
 					</li>
 					<li className={styles['header__toggle-menu-item']}>
-						<NavLink href={'/about'} className='font-bold'>
+						<NavLink
+							href={'/about'}
+							className='font-bold'
+							onClick={() => {
+								setShowMenu && setShowMenu(false);
+							}}>
 							About Us
 						</NavLink>
 					</li>
@@ -46,7 +66,10 @@ export const HeaderToggleMenu = () => {
 
 				<Link
 					className={styles['header__toggle-link']}
-					href={'/contact-us'}>
+					href={'/contact-us'}
+					onClick={() => {
+						setShowMenu && setShowMenu(false);
+					}}>
 					Contact Us
 				</Link>
 			</div>

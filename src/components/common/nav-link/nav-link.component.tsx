@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
-import { HTMLProps } from 'react';
+import { HTMLProps, MouseEventHandler } from 'react';
 import styles from './nav-link.module.scss';
 
 interface Props extends HTMLProps<HTMLDivElement> {
@@ -8,7 +8,12 @@ interface Props extends HTMLProps<HTMLDivElement> {
 	className?: string;
 }
 
-export const NavLink: React.FC<Props> = ({ className, href, children }) => {
+export const NavLink: React.FC<Props> = ({
+	className,
+	href,
+	children,
+	...props
+}) => {
 	const { pathname } = useRouter();
 
 	return (
@@ -18,7 +23,12 @@ export const NavLink: React.FC<Props> = ({ className, href, children }) => {
 				pathname === href ? styles['link--active'] : ''
 			} ${className ? className : ''} ${
 				pathname === '/contact-us' ? styles['link--white'] : ''
-			}`.trim()}>
+			}`.trim()}
+			onClick={
+				props.onClick as
+					| MouseEventHandler<HTMLAnchorElement>
+					| undefined
+			}>
 			{children}
 		</Link>
 	);
