@@ -55,7 +55,10 @@ export const ContactUsForm: React.FC<Props> = () => {
 				</label>
 			</div>
 
-			<div className='flex justify-between flex-col items-center lg:flex-row gap-6'>
+			<div
+				className={`flex justify-between flex-col  ${
+					pathname === '/' ? 'items-start' : 'items-center lg:flex-row'
+				} gap-6`}>
 				<div>
 					<FileInput />
 				</div>
