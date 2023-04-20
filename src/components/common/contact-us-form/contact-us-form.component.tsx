@@ -57,10 +57,19 @@ export const ContactUsForm: React.FC<Props> = () => {
 
 			<div
 				className={`flex justify-between flex-col  ${
-					pathname === '/' ? 'items-start' : 'items-center lg:flex-row'
+					pathname === '/'
+						? 'items-start'
+						: 'items-center md:flex-row'
 				} gap-6`}>
-				<div>
+				<div className='flex flex-col md:flex-row gap-4 items-center'>
 					<FileInput />
+					<p
+						className={` font-semibold text-center md:text-left w-[236px] ${
+							pathname === '/' ? 'text-current  ' : 'text-white'
+						}`}>
+						Up to 3 files in any format The maximum file size is
+						10MB
+					</p>
 				</div>
 				<button
 					type='submit'
