@@ -1,6 +1,8 @@
 export { default as AttachIcon } from "./attach-icon";
+export { default as ClockIcon } from "./clock-icon";
 export { default as CloseIcon } from "./close-icon";
 export { default as DatabaseIcon } from "./database-icon";
+export { default as DollarCircleIcon } from "./dollar-circle-icon";
 export { default as DownArrowIcon } from "./down-arrow-icon";
 export { default as EmailIcon } from "./email-icon";
 export { default as ErpIcon } from "./erp-icon";
@@ -11,6 +13,7 @@ export { default as LinkedinIcon } from "./linkedin-icon";
 export { default as LocationIcon } from "./location-icon";
 export { default as LockIcon } from "./lock-icon";
 export { default as MobileIcon } from "./mobile-icon";
+export { default as PercentageCircleIcon } from "./percentage-circle-icon";
 export { default as PhoneIcon } from "./phone-icon";
 export { default as TogglerIcon } from "./toggler-icon";
 export { default as TwitterIcon } from "./twitter-icon";

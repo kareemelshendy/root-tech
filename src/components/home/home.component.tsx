@@ -1,5 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import { DatabaseIcon, LockIcon, Tabs, WindowsIcon } from '@/components';
+import {
+	ClockIcon,
+	DatabaseIcon,
+	DollarCircleIcon,
+	LockIcon,
+	PercentageCircleIcon,
+	Tabs,
+	WindowsIcon,
+} from '@/components';
 import styles from './home.module.scss';
 import Link from 'next/link';
 
@@ -61,8 +69,8 @@ export const Home: React.FC<Props> = () => {
 					</div>
 				</div>
 			</section>
-			<section id='home' className={styles['home']}>
-				<div>
+			<section id='home'>
+				<div className={styles['home__offers']}>
 					<h3 className={styles['home__subtitle']}>
 						What we&apos;re{' '}
 						<span className='text-colorPrimary'>Offering?</span>
@@ -169,6 +177,61 @@ export const Home: React.FC<Props> = () => {
 							see all of our services
 						</Link>
 					</p>
+				</div>
+			</section>
+
+			<section id='us'>
+				<div className={styles['home__us']}>
+					<h3 className={styles['home__subtitle']}>
+						What we&apos;re{' '}
+						<span className='text-colorPrimary'>Offering?</span>
+					</h3>
+					<div className={styles['home__us-card-wrapper']}>
+						<div className={styles['home__us-card']}>
+							<span className={styles['home__us-card-icon']}>
+								<DollarCircleIcon />
+							</span>
+							<h4 className={styles['home__us-card-title']}>
+								Cost-Effective and flexibility
+							</h4>
+
+							<p className={styles['home__us-card-desc']}>
+								With our world-class professional developers and
+								our great tools and technologies, we will
+								improve your experience and help your business
+								growth with custom mobile apps for iOS and
+								Android.
+							</p>
+						</div>
+						<div className={styles['home__us-card']}>
+							<span className={styles['home__us-card-icon']}>
+								<ClockIcon />
+							</span>
+							<h4 className={styles['home__us-card-title']}>
+								Faster to the market
+							</h4>
+
+							<p className={styles['home__us-card-desc']}>
+								With our professional and experienced developers
+								we can insure that your project will go live as
+								fast as possible
+							</p>
+						</div>
+						<div className={styles['home__us-card']}>
+							<span className={styles['home__us-card-icon']}>
+								<PercentageCircleIcon />
+							</span>
+							<h4 className={styles['home__us-card-title']}>
+								Full Coverage
+							</h4>
+
+							<p className={styles['home__us-card-desc']}>
+								Project success and your great experience is our
+								main priority. we will take care of every
+								details from start to finish
+							</p>
+						</div>
+					</div>
 				</div>
 			</section>
 		</>
