@@ -33,8 +33,73 @@
 			}
 
 			&-tech {
-				@apply flex justify-between items-center flex-wrap;
+				@apply flex justify-between items-start flex-wrap;
 			}
+		}
+	}
+
+	&__icon {
+		@apply w-[63px] h-[63px]  bg-no-repeat bg-center duration-75;
+
+		&-container {
+			@apply flex flex-col items-center justify-center w-[105px];
+		}
+
+		&-text {
+			@apply text-center text-colorPrimary font-semibold;
+		}
+
+		&--native {
+			@apply bg-[url('/images/apps/reactnative.svg')] hover:bg-[url('/images/apps/reactnative-colored.svg')];
+		}
+
+		&--apple {
+			@apply bg-[url('/images/apps/apple.svg')] hover:bg-[url('/images/apps/apple-colored.svg')] duration-0;
+		}
+
+		&--flutter {
+			@apply bg-[url('/images/apps/flutter.svg')] hover:bg-[url('/images/apps/flutter-colored.svg')];
+		}
+
+		&--android {
+			@apply bg-[url('/images/apps/android.svg')] hover:bg-[url('/images/apps/android-colored.svg')];
+		}
+		&--js {
+			@apply bg-[url('/images/apps/js.svg')] hover:bg-[url('/images/apps/js-colored.svg')];
+		}
+		&--angular {
+			@apply bg-[url('/images/apps/angular.svg')] hover:bg-[url('/images/apps/angular-colored.svg')];
+		}
+		&--php {
+			@apply bg-[url('/images/apps/php.svg')] hover:bg-[url('/images/apps/php-colored.svg')];
+		}
+
+		&--python {
+			@apply bg-[url('/images/apps/python.svg')] hover:bg-[url('/images/apps/python-colored.svg')];
+		}
+
+		&--node {
+			@apply bg-[url('/images/apps/node-js.svg')] hover:bg-[url('/images/apps/node-js-colored.svg')];
+		}
+		&--django {
+			@apply bg-[url('/images/apps/django.svg')] hover:bg-[url('/images/apps/django-colored.svg')];
+		}
+
+		&--odoo {
+			@apply bg-[url('/images/apps/odoo.svg')] hover:bg-[url('/images/apps/odoo-colored.svg')];
+		}
+
+		&--figma {
+			@apply bg-[url('/images/apps/figma.svg')] hover:bg-[url('/images/apps/figma-colored.svg')];
+		}
+		&--ps {
+			@apply bg-[url('/images/apps/ps.svg')] hover:bg-[url('/images/apps/ps-colored.svg')];
+		}
+		&--ai {
+			@apply bg-[url('/images/apps/ai.svg')] hover:bg-[url('/images/apps/ai-colored.svg')];
+		}
+		&--xd {
+			@apply bg-[url('/images/apps/xd.svg')] hover:bg-[url('/images/apps/xd-colored.svg')];
 		}
 	}
 }

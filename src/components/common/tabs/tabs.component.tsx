@@ -57,22 +57,35 @@ export const Tabs: React.FC<Props> = () => {
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
-							<img
-								src='/images/react-native.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/apple-app.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/flutter-app.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/android-app.png'
-								alt='Mobile App System'
-							/>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--native']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									React Native App Development
+								</p>
+							</div>
+
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--apple']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Apple app development
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--flutter']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Flutter app development
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--android']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Android app development
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -93,27 +106,47 @@ export const Tabs: React.FC<Props> = () => {
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
-							<img
-								src='/images/react-native.png'
-								alt='Mobile App System'
-							/>
-							<img src='/images/js.png' alt='Mobile App System' />
-							<img
-								src='/images/angular.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/php.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/python.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/node.png'
-								alt='Mobile App System'
-							/>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--native']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									React Native App Development
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--js']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Java Script
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--angular']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Angular
+								</p>
+							</div>
+
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--php']}`}></div>
+								<p className={styles['tabs__icon-text']}>Php</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--python']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Python
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--node']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Node js.
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -134,18 +167,27 @@ export const Tabs: React.FC<Props> = () => {
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
-							<img
-								src='/images/python.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/django.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/odoo.png'
-								alt='Mobile App System'
-							/>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--python']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Python
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--django']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Django
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Odoo
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -166,22 +208,32 @@ export const Tabs: React.FC<Props> = () => {
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
-							<img
-								src='/images/figma.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/photoshop.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/illustrator.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/xd.png'
-								alt='Mobile App System'
-							/>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--figma']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Figma
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--ps']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Photoshop
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--ai']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Illustrator
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--xd']}`}></div>
+								<p className={styles['tabs__icon-text']}>XD</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -202,22 +254,34 @@ export const Tabs: React.FC<Props> = () => {
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
-							<img
-								src='/images/node.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/js.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/python.png'
-								alt='Mobile App System'
-							/>
-							<img
-								src='/images/odoo.png'
-								alt='Mobile App System'
-							/>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--node']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Node js.
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--js']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Java Script
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--python']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Python
+								</p>
+							</div>
+							<div className={styles['tabs__icon-container']}>
+								<div
+									className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo']}`}></div>
+								<p className={styles['tabs__icon-text']}>
+									Odoo
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
