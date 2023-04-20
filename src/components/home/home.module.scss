@@ -25,7 +25,7 @@
 		}
 
 		&-link {
-			@apply text-colorPrimary border-2 border-colorPrimary rounded-default py-[10px] flex items-center justify-center hover:text-white hover:bg-colorPrimary duration-150 w-[228px] text-[24px];
+			@apply text-colorPrimary border-2 border-colorPrimary rounded-default py-[10px] flex items-center justify-center hover:text-white hover:bg-colorPrimary duration-150 w-[228px] text-[18px] lg:text-[24px];
 		}
 
 		&-img {
