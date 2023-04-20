@@ -30,7 +30,7 @@
 		}
 
 		&-img {
-			@apply w-full  lg:block h-full lg:w-1/2 lg:absolute right-0;
+			@apply w-full  lg:block h-full lg:w-1/2 lg:absolute right-0 object-contain;
 		}
 	}
 

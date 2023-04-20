@@ -1,5 +1,9 @@
+.wrapper {
+	@apply mb-[18px];
+}
+
 .input {
-	@apply w-full outline-none bg-[#EDEDED] px-[16px] h-[45px] lg:h-[67px] text-base rounded-default lg:text-[20px] lg:leading-[20px] text-black mb-[18px];
+	@apply w-full outline-none bg-[#EDEDED] px-[16px] h-[45px] lg:h-[67px] text-base rounded-default lg:text-[20px] lg:leading-[20px] text-black;
 
 	&::placeholder {
 		@apply text-[#8D8D8D] font-[16px];
@@ -7,7 +11,7 @@
 }
 
 .textarea {
-	@apply w-full outline-none bg-[#EDEDED] p-4 rounded-default text-[16px] lg:text-[20px] leading-[20px] text-black mb-[18px] h-[110px] resize-none;
+	@apply w-full outline-none bg-[#EDEDED] p-4 rounded-default text-[16px] lg:text-[20px] leading-[20px] text-black  h-[110px] resize-none;
 
 	&::placeholder {
 		@apply text-[#8D8D8D] font-[16px];
@@ -17,7 +21,7 @@
 .label {
 	@apply text-[20px] font-semibold text-white mb-[9px] block;
 
-	&--black{
-		@apply text-[#0A0C0D]
+	&--black {
+		@apply text-[#0A0C0D];
 	}
 }

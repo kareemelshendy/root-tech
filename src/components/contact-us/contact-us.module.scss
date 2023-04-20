@@ -1,6 +1,6 @@
 .contact-us {
 	&__bg {
-		@apply -mt-[120px] pt-[136px] h-[976px] bg-[url('/images/contact-us-bg.jpg')];
+		@apply -mt-[120px] pt-[136px] min-h-[976px] bg-[url('/images/contact-us-bg.jpg')] pb-[24px];
 	}
 
 	&__form {

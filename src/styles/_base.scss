@@ -3,7 +3,7 @@ html {
 	direction: ltr;
 	text-align: left;
 	scroll-behavior: smooth;
-	@apply text-[#0A0C0D]
+	@apply text-[#0A0C0D];
 }
 
 [dir='ltr'] body {
@@ -41,7 +41,10 @@ html {
 	@apply font-bold text-base md:text-[20px] text-center leading-[38px] text-colorHeading mb-6 md:mb-[48px] max-w-[544px];
 }
 
+.tabs-selected {
+	@apply bg-colorPrimary text-white #{!important};
+}
 
-.tabs-selected{
-	@apply bg-colorPrimary text-white #{!important} 
+.error-message {
+	@apply text-red-400 text-[14px];
 }

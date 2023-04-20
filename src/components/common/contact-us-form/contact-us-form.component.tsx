@@ -1,6 +1,6 @@
 import { useForm } from 'react-hook-form';
 import styles from './contact-us-form.module.scss';
-import { FileInput, Input } from '@/components';
+import { ErrorMessage, FileInput, Input } from '@/components';
 import { useRouter } from 'next/router';
 interface Props {}
 export const ContactUsForm: React.FC<Props> = () => {
@@ -8,6 +8,8 @@ export const ContactUsForm: React.FC<Props> = () => {
 		handleSubmit,
 		control,
 		register,
+		trigger,
+		setValue,
 		formState: { errors },
 	} = useForm();
 	const { pathname } = useRouter();
@@ -22,6 +24,8 @@ export const ContactUsForm: React.FC<Props> = () => {
 				placeholder='Your name'
 				label='Your name'
 				control={control}
+				error={errors}
+				required
 			/>
 			<Input
 				name='email'
@@ -29,6 +33,8 @@ export const ContactUsForm: React.FC<Props> = () => {
 				label='Your email'
 				control={control}
 				type='email'
+				error={errors}
+				required
 			/>
 			<Input
 				name='desciption'
@@ -36,23 +42,39 @@ export const ContactUsForm: React.FC<Props> = () => {
 				label='Desciption'
 				control={control}
 				type='textarea'
+				error={errors}
+				required
 			/>
 
-			<div className='flex gap-4 items-center mb-6'>
-				<input
-					{...register('subscibe')}
-					type='checkbox'
-					name='subscibe'
-					id='subscibe'
-					className='accent-colorPrimary w-4 h-4 rounded'
-				/>
-				<label
-					htmlFor='subscibe'
-					className={`${
-						pathname === '/' ? 'text-current' : 'text-white'
-					}`}>
-					Subscribe to newsletter
-				</label>
+			<div className='mb-6'>
+				<div>
+					<div className='flex gap-4 items-center '>
+						<input
+							{...register('subscibe', {
+								required: {
+									value: true,
+									message: 'Required Field',
+								},
+							})}
+							type='checkbox'
+							name='subscibe'
+							id='subscibe'
+							className='accent-colorPrimary w-4 h-4 rounded'
+						/>
+						<label
+							htmlFor='subscibe'
+							className={`${
+								pathname === '/' ? 'text-current' : 'text-white'
+							}`}>
+							Subscribe to newsletter
+						</label>
+					</div>
+				</div>
+				{errors[`subscibe`] ? (
+					<ErrorMessage
+						message={errors[`subscibe`].message as string}
+					/>
+				) : null}
 			</div>
 
 			<div
@@ -65,16 +87,30 @@ export const ContactUsForm: React.FC<Props> = () => {
 					className={`flex flex-col md:flex-row gap-4 ${
 						pathname === '/' ? '' : 'items-center'
 					}`}>
-					<FileInput />
-					<p
-						className={` font-semibold  w-[236px] ${
-							pathname === '/'
-								? 'text-current  '
-								: 'text-white text-center md:text-left'
-						}`}>
-						Up to 3 files in any format The maximum file size is
-						10MB
-					</p>
+					<FileInput
+						control={control}
+						name='files'
+						trigger={trigger}
+						setValue={setValue}
+						rules={{
+							required: {
+								value: true,
+								message: 'Required Field',
+							},
+							validate: {
+								maxLength: (value: string) => {
+									if (
+										Array.isArray(value) &&
+										value.length > 3
+									) {
+										return 'Max 3 files';
+									} else {
+										return true;
+									}
+								},
+							},
+						}}
+					/>
 				</div>
 				<button
 					type='submit'
