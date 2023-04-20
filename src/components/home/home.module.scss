@@ -87,10 +87,26 @@
 	}
 
 	&__us {
-		@apply container;
+		@apply container mb-[112px];
 
 		&-card {
 			@apply max-h-[583px] md:min-h-[406px];
+		}
+	}
+
+	&__your-projects {
+		@apply py-[115px] bg-[url('/images/your-project-bg.png')] bg-cover bg-no-repeat mb-[52px];
+
+		&-wrapper {
+			@apply container flex flex-col justify-between items-center;
+		}
+
+		&-title {
+			@apply  text-[24px] md:text-[32px] text-white lg:text-[55px] font-bold text-center mb-[52px];
+		}
+
+		&-link {
+			@apply w-full sm:w-[396px] flex items-center justify-center bg-colorPrimary text-white rounded-default py-[13px] lg:h-[83px]  text-[18px]  md:text-[22px] lg:text-[28px] font-bold;
 		}
 	}
 }

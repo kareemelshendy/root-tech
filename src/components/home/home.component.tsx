@@ -234,6 +234,20 @@ export const Home: React.FC<Props> = () => {
 					</div>
 				</div>
 			</section>
+
+			<section className={styles['home__your-projects']}>
+				<div className={styles['home__your-projects-wrapper']}>
+					<h3 className={styles['home__your-projects-title']}>
+						Let&apos;s build your project and transform your dreams
+						into reality
+					</h3>
+					<Link
+						href={'#'}
+						className={styles['home__your-projects-link']}>
+						Start your project
+					</Link>
+				</div>
+			</section>
 		</>
 	);
 };
