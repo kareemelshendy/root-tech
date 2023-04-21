@@ -27,7 +27,9 @@ export const Accordion: React.FC<Props> = ({ title, children }) => {
 				className={styles['accordion__button']}
 				onClick={() => setShow(!show)}>
 				<h3 className={styles['accordion__button-text']}>{title}</h3>{' '}
-				<DownArrowIcon />
+				<div className={show ? 'rotate-180' : ''}>
+					<DownArrowIcon />
+				</div>
 			</button>
 			<div
 				className={styles['accordion__content']}

@@ -35,13 +35,13 @@ export const Home: React.FC<Props> = () => {
 							reality with us
 						</p>
 
-						<Link href='#' className={styles['home__hero-link']}>
+						<Link href='/contact-us' className={styles['home__hero-link']}>
 							Start your project
 						</Link>
 					</div>
 
 					<img
-						src='./images/code.png'
+						src='./images/code.svg'
 						alt='Software solutions'
 						className={styles['home__hero-img']}
 					/>
@@ -254,7 +254,7 @@ export const Home: React.FC<Props> = () => {
 						into reality
 					</h3>
 					<Link
-						href={'#'}
+						href={'/contact-us'}
 						className={styles['home__your-projects-link']}>
 						Start your project
 					</Link>

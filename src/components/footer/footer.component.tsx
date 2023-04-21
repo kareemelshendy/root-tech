@@ -82,11 +82,11 @@ export const Footer: React.FC<Props> = () => {
 									</li>
 									<li className={styles['footer__nav-item']}>
 										<Link
-											href={'/blog'}
+											href={'/policy'}
 											className={
 												styles['footer__nav-link']
 											}>
-											Blog
+											Policies
 										</Link>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -127,7 +127,7 @@ export const Footer: React.FC<Props> = () => {
 									</li>
 									<li className={styles['footer__nav-item']}>
 										<Link
-											href={'/cookies-policy'}
+											href={'/policy'}
 											className={
 												styles['footer__nav-link']
 											}>
@@ -143,7 +143,7 @@ export const Footer: React.FC<Props> = () => {
 											Privacy Policy
 										</Link>
 									</li>
-									<li className={styles['footer__nav-item']}>
+									{/* <li className={styles['footer__nav-item']}>
 										<Link
 											href={'/terms'}
 											className={
@@ -151,7 +151,7 @@ export const Footer: React.FC<Props> = () => {
 											}>
 											Terms of use
 										</Link>
-									</li>
+									</li> */}
 								</ul>
 							</nav>
 							<nav className={styles['footer__nav']}>

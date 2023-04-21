@@ -4,6 +4,10 @@
 	$parent: &;
 	@apply py-3;
 	z-index: 100;
+	// position: fixed;
+	// inset-inline: 0;
+	// background-color: #fff;
+	// margin-top: 55px;
 
 	&--white {
 		@apply text-white;
@@ -15,6 +19,10 @@
 
 		&-wrapper {
 			@apply border-b border-colorPrimary hidden md:flex justify-between items-center py-[12px];
+
+			#{$parent}__top--white & {
+				@apply border-white;
+			}
 		}
 
 		&--white {
@@ -26,6 +34,10 @@
 
 			&-text {
 				@apply pr-[13px] border-r border-colorPrimary;
+
+				#{$parent}__top--white & {
+					@apply border-white;
+				}
 			}
 		}
 	}

@@ -190,7 +190,10 @@ export const Services: React.FC<Props> = () => {
 				<div className='flex flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
 					<img src='/images/oracle.png' alt='Oracle' />
 					<img src='/images/redhat.png' alt='Red Hat' />
-					<img src='/images/windows-server.png' alt='Windows Server' />
+					<img
+						src='/images/windows-server.png'
+						alt='Windows Server'
+					/>
 				</div>
 			</div>
 		</section>

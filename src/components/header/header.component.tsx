@@ -25,7 +25,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 			<HeaderTop />
 			<header
 				className={`${styles['header']} ${
-					pathname === '/contact-us' ? styles['header__white'] : ''
+					pathname === '/contact-us' ? styles['header--white'] : ''
 				} ${
 					isStickyHeader ? styles['header__white--active'] : ''
 				}`.trim()}>
