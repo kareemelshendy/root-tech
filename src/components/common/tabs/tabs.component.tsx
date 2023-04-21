@@ -58,11 +58,11 @@ export const Tabs: React.FC<Props> = () => {
 
 						<div className={styles['tabs__panel-content-tech']}>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--native']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--native']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']}  ${styles['tabs__icon--native-second']}`}></div>
+										className={`${styles['tabs__icon']}  ${styles['tabs__icon--native-second']}  duration-300 opacity-0 group-hover:opacity-100`}></div>
 								</div>
 
 								<p className={styles['tabs__icon-text']}>
@@ -71,11 +71,11 @@ export const Tabs: React.FC<Props> = () => {
 							</div>
 
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--apple']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--apple']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--apple-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--apple-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 
 								<p className={styles['tabs__icon-text']}>
@@ -83,22 +83,22 @@ export const Tabs: React.FC<Props> = () => {
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--flutter']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--flutter']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--flutter-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--flutter-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Flutter app development
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--android']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--android']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--android-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--android-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Android app development
@@ -125,11 +125,11 @@ export const Tabs: React.FC<Props> = () => {
 
 						<div className={styles['tabs__panel-content-tech']}>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--native']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--native']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--native-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--native-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 
 								<p className={styles['tabs__icon-text']}>
@@ -137,22 +137,22 @@ export const Tabs: React.FC<Props> = () => {
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--js']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--js']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--js-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--js-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Java Script
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--angular']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--angular']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--angular-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--angular-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Angular
@@ -160,31 +160,31 @@ export const Tabs: React.FC<Props> = () => {
 							</div>
 
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--php']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--php']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--php-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--php-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>Php</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--python']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--python']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--python-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--python-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Python
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--node']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--node']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--node-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--node-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Node js.
@@ -211,33 +211,33 @@ export const Tabs: React.FC<Props> = () => {
 
 						<div className={styles['tabs__panel-content-tech']}>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--python']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--python']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--python-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--python-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Python
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--django']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--django']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--django-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--django-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Django
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Odoo
@@ -264,44 +264,44 @@ export const Tabs: React.FC<Props> = () => {
 
 						<div className={styles['tabs__panel-content-tech']}>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--figma']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--figma']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--figma-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--figma-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Figma
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--ps']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--ps']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--ps-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--ps-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Photoshop
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--ai']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--ai']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--ai-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--ai-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Illustrator
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--xd']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--xd']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--xd-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--xd-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>XD</p>
 							</div>
@@ -326,44 +326,44 @@ export const Tabs: React.FC<Props> = () => {
 
 						<div className={styles['tabs__panel-content-tech']}>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--node']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--node']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--node-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--node-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Node js.
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--js']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--js']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--js-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--js-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Java Script
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--python']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--python']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--python-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--python-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Python
 								</p>
 							</div>
 							<div className={styles['tabs__icon-container']}>
-								<div className='relative'>
+								<div className='relative group'>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo']} duration-300 opacity-100  group-hover:opacity-0`}></div>
 									<div
-										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo-second']}`}></div>
+										className={`${styles['tabs__icon']} ${styles['tabs__icon--odoo-second']} duration-300 opacity-0  group-hover:opacity-100`}></div>
 								</div>
 								<p className={styles['tabs__icon-text']}>
 									Odoo
