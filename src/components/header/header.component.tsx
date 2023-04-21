@@ -1,7 +1,10 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
 import styles from './header.module.scss';
+import useTranslation from 'next-translate/useTranslation';
+
 import {
 	HeaderToggleMenu,
 	HeaderTop,
@@ -14,8 +17,9 @@ interface Props {
 }
 
 export const Header: React.FC<Props> = ({ isWhite = false }) => {
-	const { pathname } = useRouter();
+	const { pathname, query, asPath, push } = useRouter();
 	const { showMenu, setShowMenu } = useToggleMenu();
+	const { t } = useTranslation();
 
 	// const { showMenu, setShowMenu } = useToggleMenu();
 	const [isStickyHeader, setIsStickyHeader] = useState(false);
@@ -52,21 +56,23 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							<nav>
 								<ul className={styles['header__menu']}>
 									<li className={styles['header__menu-item']}>
-										<NavLink href='/'>Home</NavLink>
+										<NavLink href='/'>
+											{t('common:header.home')}
+										</NavLink>
 									</li>
 									<li className={styles['header__menu-item']}>
 										<NavLink href='/services'>
-											Services
+											{t('common:header.services')}
 										</NavLink>
 									</li>
 									<li className={styles['header__menu-item']}>
 										<NavLink href='/policy'>
-											Policies
+											{t('common:header.policies')}
 										</NavLink>
 									</li>
 									<li className={styles['header__menu-item']}>
 										<NavLink href='/about'>
-											About Us
+											{t('common:header.about-us')}
 										</NavLink>
 									</li>
 								</ul>
@@ -78,7 +84,7 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 							<Link
 								href='/contact-us'
 								className={styles['header__actions-button']}>
-								Contact Us
+								{t('common:header.contact-us')}
 							</Link>
 
 							{/* <button> */}
