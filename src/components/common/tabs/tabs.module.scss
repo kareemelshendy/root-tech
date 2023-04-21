@@ -33,7 +33,7 @@
 			}
 
 			&-tech {
-				@apply flex justify-evenly items-start flex-wrap;
+				@apply flex justify-center gap-4 lg:gap-0 lg:justify-evenly items-start flex-wrap;
 			}
 		}
 	}

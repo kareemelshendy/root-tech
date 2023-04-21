@@ -77,11 +77,11 @@
 			}
 
 			&-desc {
-				@apply text-[16px] lg:text-[24px] text-colorPrimary mb-4;
+				@apply text-[16px] lg:text-[24px] text-colorPrimary mb-8;
 			}
 
 			&-imgs {
-				@apply flex  flex-wrap justify-around items-center gap-2 space-y-2;
+				@apply flex flex-wrap justify-around items-center gap-2 space-y-5 lg:space-x-5;
 			}
 		}
 	}

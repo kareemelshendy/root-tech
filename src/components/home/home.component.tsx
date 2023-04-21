@@ -105,6 +105,7 @@ export const Home: React.FC<Props> = () => {
 								<img
 									src='/images/oracle-small.png'
 									alt='Oracle'
+									className='lg:w-[140px]'
 								/>
 							</div>
 						</div>
@@ -127,18 +128,22 @@ export const Home: React.FC<Props> = () => {
 								<img
 									src='/images/cisco-small.png'
 									alt='Cisco'
+									className='lg:w-[80px]'
 								/>
 								<img
 									src='/images/kaspersky-small.png'
 									alt='Kaspersky'
+									className='lg:w-[120px]'
 								/>
 								<img
 									src='/images/fortinet-small.png'
 									alt='Fortinet'
+									className='lg:w-[120px]'
 								/>
 								<img
 									src='/images/paloalto-small.png'
 									alt='Palpalto'
+									className=' lg:w-[120px]'
 								/>
 							</div>
 						</div>
@@ -161,14 +166,17 @@ export const Home: React.FC<Props> = () => {
 								<img
 									src='/images/oracle-small.png'
 									alt='Oracle'
+									className='lg:w-[140px]'
 								/>
 								<img
 									src='/images/red-hat-small.png'
 									alt='Red Hat'
+									className='lg:w-[140px]'
 								/>
 								<img
 									src='/images/windows-server.png'
 									alt='Windows Server'
+									className='lg:w-[200px]'
 								/>
 							</div>
 						</div>
