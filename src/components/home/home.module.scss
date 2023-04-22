@@ -61,14 +61,14 @@
 	&__offers,
 	&__us {
 		&-card {
-			@apply py-4 lg:py-[38px] px-[18px] bg-[#F6F6F6] rounded-tl-default rounded-tr-default md:min-h-[500px] lg:min-h-0 lg:h-[678px] xl:h-[623px] mb-6 border-b-2 border-colorPrimary;
+			@apply py-4 lg:py-[38px] px-[18px] bg-[#F6F6F6] rounded-tl-default rounded-tr-default  lg:min-h-0 lg:h-[632px] xl:h-[577px] 2xl:max-h-[490px] mb-6 border-b-2 border-colorPrimary;
 
 			&-wrapper {
-				@apply columns-1 md:columns-3 mt-4;
+				@apply columns-1 lg:columns-3 mt-4;
 			}
 
 			&-icon {
-				@apply text-[40px]  lg:text-[90px] text-colorPrimary mb-2 block;
+				@apply text-[40px]  lg:text-[76px] text-colorPrimary mb-2 block;
 			}
 
 			&-title {

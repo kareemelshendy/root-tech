@@ -100,13 +100,13 @@ export const Home: React.FC<Props> = () => {
 							</p>
 
 							<div className={styles['home__offers-card-imgs']}>
-								<img src='/images/sql-small.png' alt='SQL' />
+								<img src='/images/sql-small.svg' alt='SQL' />
 								<img
-									src='/images/postget-sql-small.png'
+									src='/images/postget-small.svg'
 									alt='Postget SQL'
 								/>
 								<img
-									src='/images/oracle-small.png'
+									src='/images/oracle-small.svg'
 									alt='Oracle'
 									className='lg:w-[140px]'
 								/>
@@ -129,22 +129,22 @@ export const Home: React.FC<Props> = () => {
 
 							<div className={styles['home__offers-card-imgs']}>
 								<img
-									src='/images/cisco-small.png'
+									src='/images/cisco-small.svg'
 									alt='Cisco'
 									className='lg:w-[80px]'
 								/>
 								<img
-									src='/images/kaspersky-small.png'
+									src='/images/kaspersky-small.svg'
 									alt='Kaspersky'
 									className='lg:w-[120px]'
 								/>
 								<img
-									src='/images/fortinet-small.png'
+									src='/images/fortinet-small.svg'
 									alt='Fortinet'
 									className='lg:w-[120px]'
 								/>
 								<img
-									src='/images/paloalto-small.png'
+									src='/images/paloalto-small.svg'
 									alt='Palpalto'
 									className=' lg:w-[120px]'
 								/>
@@ -167,17 +167,17 @@ export const Home: React.FC<Props> = () => {
 
 							<div className={styles['home__offers-card-imgs']}>
 								<img
-									src='/images/oracle-small.png'
+									src='/images/oracle-small.svg'
 									alt='Oracle'
 									className='lg:w-[140px]'
 								/>
 								<img
-									src='/images/red-hat-small.png'
+									src='/images/red-hat-small.svg'
 									alt='Red Hat'
 									className='lg:w-[140px]'
 								/>
 								<img
-									src='/images/windows-server.png'
+									src='/images/windows-server.svg'
 									alt='Windows Server'
 									className='lg:w-[200px]'
 								/>
