@@ -28,6 +28,7 @@ export const Home: React.FC<Props> = () => {
 							<span className='text-colorPrimary'>
 								Exceptional
 							</span>{' '}
+							<br />
 							software solutions
 						</h2>
 						<p className={styles['home__hero-desc']}>
@@ -35,7 +36,9 @@ export const Home: React.FC<Props> = () => {
 							reality with us
 						</p>
 
-						<Link href='/contact-us' className={styles['home__hero-link']}>
+						<Link
+							href='/contact-us'
+							className={styles['home__hero-link']}>
 							Start your project
 						</Link>
 					</div>
