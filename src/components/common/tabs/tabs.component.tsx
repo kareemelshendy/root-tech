@@ -66,7 +66,7 @@ export const Tabs: React.FC<Props> = () => {
 								</div>
 
 								<p className={styles['tabs__icon-text']}>
-									React Native App Development
+									React Native  Development
 								</p>
 							</div>
 
