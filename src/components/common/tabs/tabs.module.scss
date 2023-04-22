@@ -46,7 +46,7 @@
 		}
 
 		&-text {
-			@apply text-center text-colorPrimary font-semibold;
+			@apply text-center text-[14px] md:text-base text-colorPrimary font-semibold;
 		}
 
 		&--native {
