@@ -7,6 +7,10 @@
         "contact-us": "Contact Us",
         "top": "Need a help? talk to our experts"
     },
+    "hero": {
+        "title": "Transform your ideas into <0>Exceptional</0>  <1></1>software solutions",
+        "desc": "Take the next step with your dreams and turn it into reality with us"
+    },
     "about": {
         "title": "Who we <0>Are?</0>",
         "desc-1": "Looking for a trusted IT partner to help you achieve your business goals? IROOT Technology is leading IT company, based in Bochum, Germany, is staffed by highly qualified software and hardware engineers with a focus on delivering high-quality, innovative, and cost-effective solutions for businesses.  ",
@@ -20,6 +24,7 @@
     "servcies": {
         "title": "What we're <0>Offering?</0>",
         "desc": "Transform your business with our comprehensive range of IT services, customized to meet your unique needs. From software development to IT consulting, we've got you covered. Our expert team will help you harness the power of technology to drive growth and efficiency in your business. With our cutting-edge tools and technologies, we'll help you stay ahead of the competition and achieve your goals faster. Let's work together to take your business to the next level.",
+        "also-offering": "We also <0>offering</0>",
         "mobile": {
             "title": "Mobile App System",
             "desc": "Grow your business with custom mobile apps for iOS and Android. Our world-class team of professional developers and cutting-edge tools and technologies can help you create reliable, scalable, and user-friendly mobile apps that offer exceptional user experiences. Contact us today to learn more."
@@ -66,12 +71,17 @@
         }
     },
     "build": "Bring your vision to life with our project-building expertise. Let's turn your dreams into a reality.",
+    "start": "Start your project",
+    "more": "and more.",
+    "more-link": "see all of our services",
     "contact": {
         "title": "Need more help?",
         "subtitle": "Contact us",
         "talk": "Let's Talk",
         "desc": "Your Vision, Our Expertise. Let's work together to bring your ideas to life and achieve your goals",
         "contacts": "Contacts",
+        "vision": "Your Vision, Our Expertise. Let's work together to bring your ideas to life and achieve your goals",
+        "touch": "Get in touch",
         "form": {
             "labels": {
                 "name": "You Name",
@@ -99,6 +109,5 @@
         "contact": "Contact",
         "need-help": "Need Help?",
         "about": "About"
-        
     }
 }

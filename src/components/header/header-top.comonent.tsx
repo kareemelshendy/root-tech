@@ -25,7 +25,7 @@ export const HeaderTop: React.FC<Props> = () => {
 						{t('common:header.top')}
 					</p>
 
-					<Link href={'tel:+4915754411184'}>+49 157 54411184</Link>
+					<Link href={'tel:+4917648985373'}>(+49) 176 48985373</Link>
 				</div>
 
 				<button

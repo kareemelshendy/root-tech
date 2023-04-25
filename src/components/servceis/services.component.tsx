@@ -73,7 +73,12 @@ export const Services: React.FC<Props> = () => {
 
 			<div className={styles['services__offers']}>
 				<h2 className={styles['services__offers-title']}>
-					We also <span className='text-colorPrimary'>offering</span>
+					<Trans
+						i18nKey='common:servcies.also-offering'
+						components={[
+							<span key={'s0'} className='text-colorPrimary' />,
+						]}
+					/>
 				</h2>
 
 				<div className='mb-[50px] lg:mb-[85px]'>

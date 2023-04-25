@@ -29,22 +29,25 @@ export const Home: React.FC<Props> = () => {
 				<div className={styles['home__hero-wrapper']}>
 					<div className={styles['home__hero-content']}>
 						<h2 className={styles['home__hero-title']}>
-							Transform your ideas into{' '}
-							<span className='text-colorPrimary'>
-								Exceptional
-							</span>{' '}
-							<br />
-							software solutions
+							<Trans
+								i18nKey='common:hero.title'
+								components={[
+									<span
+										key={'s0'}
+										className='text-colorPrimary'
+									/>,
+									<br key={'b1'} />,
+								]}
+							/>
 						</h2>
 						<p className={styles['home__hero-desc']}>
-							Take the next step with your dreams and turn it into
-							reality with us
+							{t('common:hero.desc')}
 						</p>
 
 						<Link
 							href='/contact-us'
 							className={styles['home__hero-link']}>
-							Start your project
+							{t('common:start')}
 						</Link>
 					</div>
 
@@ -214,11 +217,11 @@ export const Home: React.FC<Props> = () => {
 						</div>
 					</div>
 					<p className='text-center w-full text-xl md:text-[32px] font-medium'>
-						and more.{' '}
+						{t('common:more')}
 						<Link
 							href='/services'
 							className='text-xl md:text-[32px] text-colorPrimary font-extrabold hover:underline	hover:decoration-colorPrimary duration-300'>
-							see all of our services
+							{t('common:more-link')}
 						</Link>
 					</p>
 				</div>
@@ -301,7 +304,7 @@ export const Home: React.FC<Props> = () => {
 					<Link
 						href={'/contact-us'}
 						className={styles['home__your-projects-link']}>
-						Start your project
+						{t('common:start')}
 					</Link>
 				</div>
 			</section>

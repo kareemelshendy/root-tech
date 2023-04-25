@@ -7,6 +7,10 @@
         "contact-us": "kontaktiere uns",
         "top": "Brauchen Sie Hilfe? sprechen sie mit unseren experten"
     },
+    "hero": {
+        "title": "Verwandeln Sie Ihre Ideen in <0>außergewöhnliche</0> <1></1>Softwarelösungen",
+        "desc": "Gehen Sie mit Ihren Träumen den nächsten Schritt und setzen Sie diese mit uns in die Realität um"
+    },
     "about": {
         "title": "Wer sind <0>wir?</0>",
         "desc-1": "Suchen Sie nach einem vertrauenswürdigen IT-Partner, der Ihnen hilft, Ihre Geschäftsziele zu erreichen? IROOT Technology ist ein führendes IT-Unternehmen mit Sitz in Bochum, Deutschland und beschäftigt hochqualifizierte Software- und Hardware-Ingenieure, die sich auf die Bereitstellung von hochwertigen, innovativen und kosteneffektiven Lösungen für Unternehmen konzentrieren.",
@@ -20,6 +24,7 @@
     "servcies": {
         "title": "Was bieten <0>wir an?</0>",
         "desc": "Transformieren Sie Ihr Geschäft mit unserem umfassenden Angebot an IT-Services, die auf Ihre einzigartigen Bedürfnisse zugeschnitten sind. Von Software-Entwicklung bis hin zu IT-Beratung - wir haben Sie abgedeckt. Unser Experten-Team wird Ihnen helfen, die Kraft der Technologie zu nutzen, um Wachstum und Effizienz in Ihrem Unternehmen zu fördern. Mit unseren modernsten Tools und Technologien werden wir Ihnen helfen, einen Schritt voraus zu sein und Ihre Ziele schneller zu erreichen. Lassen Sie uns zusammenarbeiten, um Ihr Unternehmen auf die nächste Stufe zu bringen.",
+        "also-offering": "Wir bieten <0>auch</0>",
         "mobile": {
             "title": "Mobile App System",
             "desc": "Steigern Sie Ihr Geschäft mit individuellen mobilen Apps für iOS und Android. Unser erstklassiges Team professioneller Entwickler sowie modernste Tools und Technologien können Ihnen dabei helfen, zuverlässige, skalierbare und benutzerfreundliche mobile Apps zu erstellen, die außergewöhnliche Benutzererfahrungen bieten. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
@@ -66,12 +71,17 @@
         }
     },
     "build": "Bringen Sie Ihre Vision zum Leben mit unserer Projektaufbau-Expertise. Lassen Sie uns Ihre Träume in die Realität umsetzen.",
+    "start": "Starte dein Projekt",
+    "more": "und mehr.",
+    "more-link": "sehen Sie sich alle unsere Dienstleistungen an",
     "contact": {
         "title": "Benötigen Sie weitere Hilfe?",
         "subtitle": "kontaktiere uns",
         "talk": "Lass uns reden",
         "desc": "Ihre Vision, unsere Expertise. Lassen Sie uns zusammenarbeiten, um Ihre Ideen zum Leben zu erwecken und Ihre Ziele zu erreichen.",
         "contacts": "Kontakte",
+        "vision": "Ihre Vision, unsere Expertise. Lassen Sie uns zusammenarbeiten, um Ihre Ideen zum Leben zu erwecken und Ihre Ziele zu erreichen",
+        "touch": "In Kontakt kommen",
         "form": {
             "labels": {
                 "name": "Ihren Namen",
@@ -98,6 +108,6 @@
         "privacy-policy": "Datenschutz-Bestimmungen",
         "contact": "Kontakt",
         "need-help": "brauchen Sie Hilfe?",
-        "about":"um"
+        "about": "um"
     }
 }
