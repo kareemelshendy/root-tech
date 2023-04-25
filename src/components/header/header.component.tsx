@@ -106,7 +106,11 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 						</div>
 
 						<button
-							className={styles['header__toggle-button']}
+							className={`${styles['header__toggle-button']} ${
+								pathname === '/contact-us'
+									? styles['header__toggle-button--white']
+									: ''
+							}`.trim()}
 							onClick={() => setShowMenu && setShowMenu(true)}>
 							<TogglerIcon />
 						</button>

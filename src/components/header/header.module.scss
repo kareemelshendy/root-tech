@@ -122,6 +122,10 @@
 
 		&-button {
 			@apply md:hidden text-[27px] text-black;
+
+			&--white{
+				@apply text-white	
+			}
 		}
 
 		#{$parent}__white & {
