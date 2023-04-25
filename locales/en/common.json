@@ -6,5 +6,84 @@
         "about-us": "About Us",
         "contact-us": "Contact Us",
         "top": "Need a help? talk to our experts"
+    },
+    "about": {
+        "title": "Who we <0>Are?</0>",
+        "desc-1": "Looking for a trusted IT partner to help you achieve your business goals? IROOT Technology is leading IT company, based in Bochum, Germany, is staffed by highly qualified software and hardware engineers with a focus on delivering high-quality, innovative, and cost-effective solutions for businesses.  ",
+        "desc-2": "Whether you need custom software development, software integration, or professional outsourcing services, we have the expertise to provide the solutions you need. Our customer-centric approach ensures that we work closely with you to understand your unique needs and develop personalized solutions that meet your specific requirements.",
+        "desc-3": "With our commitment to excellence and customer satisfaction, you can be confident that you will receive the highest level of service and exceptional results that exceed your expectations. Don't settle for anything less than the best when it comes to your business. Contact us today to learn more about how our team of experts can help you achieve your goals with our innovative and cost-effective solutions and professional outsourcing services.",
+        "vision": "Our <0>Vision</0>",
+        "vision-desc": "At IROOT Technology ,our vision is to create a better society and a thriving economy through innovative software solutions that make it easy for businesses and individuals to achieve their goals. We believe that technology should be accessible to everyone, and that user-centric software design is essential for success.",
+        "mission": "Our <0>Mission</0>",
+        "mission-desc": "Our mission is to help businesses discover hidden insights and patterns in their data through innovative and efficient technologies. We understand that each company is unique, and our software solutions are customized to meet their specific needs. Our commitment is to deliver top-quality software products that are user-friendly, reliable, and scalable to help businesses grow and succeed."
+    },
+    "servcies": {
+        "title": "What we're <0>Offering?</0>",
+        "desc": "Transform your business with our comprehensive range of IT services, customized to meet your unique needs. From software development to IT consulting, we've got you covered. Our expert team will help you harness the power of technology to drive growth and efficiency in your business. With our cutting-edge tools and technologies, we'll help you stay ahead of the competition and achieve your goals faster. Let's work together to take your business to the next level.",
+        "mobile": {
+            "title": "Mobile App System",
+            "desc": "Grow your business with custom mobile apps for iOS and Android. Our world-class team of professional developers and cutting-edge tools and technologies can help you create reliable, scalable, and user-friendly mobile apps that offer exceptional user experiences. Contact us today to learn more."
+        },
+        "web": {
+            "title": "Web Development",
+            "desc": "Ready to take your business online and reach more customers? Our expert web developers create fast, reliable, and responsive custom websites and web applications that help businesses grow and succeed online. Contact us today to learn more."
+        },
+        "erb": {
+            "title": "ERP System",
+            "desc": "Ready to streamline your business operations and improve your bottom line? Our expert team can help you implement a custom ERP solution tailored to your unique needs. Contact us today to learn more."
+        },
+        "ui": {
+            "title": "UI/UX Design",
+            "desc": "Looking to create a user interface that engages your audience and drives business growth? Our expert UI/UX designers can help. Contact us today to learn more."
+        },
+        "software": {
+            "title": "Software Update",
+            "desc": "Keep your software up to date with our expert software update services. Our team provides comprehensive solutions that cater to your unique needs and goals. Contact us today to learn more and stay ahead of the competition."
+        },
+        "database": {
+            "title": "Database",
+            "desc": "Unlock the full potential of your business data with our expert database services. Our team of experts provides custom solutions that ensure data accuracy, security, and reliability, so you can make informed decisions and drive business growth. Contact us today to learn more."
+        },
+        "security": {
+            "title": "Security",
+            "desc": "Our team of experts provides advanced network performance and security solutions tailored to your business needs. From firewalls to performance optimization, we offer comprehensive solutions that keep your business running smoothly and securely. Contact us today to learn more."
+        },
+        "os": {
+            "title": "OS (Operation System)",
+            "desc": "Let Us support and configure your IT structure 24-7 ,start your work efficiently and effectively and achieve your productivity goals without stopping."
+        },
+        "cost": {
+            "title": "Cost-Effective and flexibility",
+            "desc": "Unleash cost-effective and flexible solutions with us. Our team provides tailored solutions that meet your unique business needs, without sacrificing your budget. Experience greater efficiency and productivity today. "
+        },
+        "fast": {
+            "title": "Faster to the market",
+            "desc": "Get ahead of the competition with lightning-fast software development services. Our agile approach ensures rapid delivery without sacrificing quality, giving you the edge you need to succeed in today's market. Don't wait, contact us now to accelerate your business growth"
+        },
+        "coverage": {
+            "title": "Full Coverage",
+            "desc": "Experience full coverage and peace of mind with our comprehensive solutions that cater to all your business needs."
+        }
+    },
+    "build": "Bring your vision to life with our project-building expertise. Let's turn your dreams into a reality.",
+    "contact": {
+        "title": "Need more help?",
+        "subtitle": "Contact us",
+        "talk": "Let's Talk",
+        "desc": "Your Vision, Our Expertise. Let's work together to bring your ideas to life and achieve your goals",
+        "contacts": "Contacts",
+        "form": {
+            "labels": {
+                "name": "You Name",
+                "email": "Your Email",
+                "description": "Description",
+                "subscribe": "Subscribe to newsletter",
+                "file": "Attach file"
+            },
+            "placeholder": {
+                "description": "Description of your projects"
+            }
+        },
+        "submit": "Submit"
     }
 }

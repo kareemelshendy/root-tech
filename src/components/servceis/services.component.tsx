@@ -1,10 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
 import { Tabs } from '@/components';
 import styles from './services.module.scss';
-
+import Trans from 'next-translate/Trans';
+import useTranslation from 'next-translate/useTranslation';
 interface Props {}
 
 export const Services: React.FC<Props> = () => {
+	const { t } = useTranslation();
 	const offersItems = [
 		'Database Management - Oracle, SQLServer, PostgreSQL',
 		'Clustering , RAC , Failover Clustering - Always On availability groups .',
@@ -46,23 +48,23 @@ export const Services: React.FC<Props> = () => {
 		<section className={styles['services']}>
 			<div className='container'>
 				<h2 className={styles['services__title']}>
-					What we&apos;re{' '}
-					<span className='text-colorPrimary'>Offering?</span>
+					<Trans
+						i18nKey='common:servcies.title'
+						components={[
+							<span key={'s0'} className='text-colorPrimary' />,
+						]}
+					/>
 				</h2>
 				<p className={styles['services__desc']}>
-					At iRoot Tech, our mission is to provide our clients with
-					customized software solutions that solve their unique
-					challenges and fulfil their specific needs. We believe that
-					every business is different, and therefore, software
-					solutions should be tailored to fit their requirements.
+					{t('common:servcies.desc')}
 				</p>
-				<p className={styles['services__desc']}>
+				{/* <p className={styles['services__desc']}>
 					We are committed to delivering high-quality software
 					products that are user-friendly, reliable, and scalable. Our
 					team of skilled developers, designers, and project managers
 					work closely with our clients to ensure that their their
 					objectives are achieved.
-				</p>
+				</p> */}
 			</div>
 			<div className={styles['services__img']}></div>
 			<div className='container mb-8 lg:mb-[92px]'>
@@ -79,12 +81,10 @@ export const Services: React.FC<Props> = () => {
 						<span className={styles['services__offers-number']}>
 							1
 						</span>{' '}
-						DataBase
+						{t('common:servcies.database.title')}
 					</h3>
 					<p className={styles['services__offers-desc']}>
-						Over 20 years of know-how in database development,
-						implementation and maintenance, We design a database
-						that is tailored to you.
+						{t('common:servcies.database.desc')}
 					</p>
 
 					<div className={styles['services__offers-content']}>
@@ -118,13 +118,10 @@ export const Services: React.FC<Props> = () => {
 						<span className={styles['services__offers-number']}>
 							2
 						</span>{' '}
-						Security & Networks
+						{t('common:servcies.security.title')}
 					</h3>
 					<p className={styles['services__offers-desc']}>
-						The Expertise that our team possesses embraces a wide
-						range of custom services. Providing advanced network
-						performance and security solutions. Involving the latest
-						and most effective development technologies.
+						{t('common:servcies.security.desc')}
 					</p>
 
 					<div className={styles['services__offers-content']}>
@@ -159,12 +156,10 @@ export const Services: React.FC<Props> = () => {
 						<span className={styles['services__offers-number']}>
 							3
 						</span>{' '}
-						OS (Operation System)
+						{t('common:servcies.os.title')}
 					</h3>
 					<p className={styles['services__offers-desc']}>
-						Let Us support and configure your IT structure
-						24\7,start your work efficiently and effectively and
-						achieve your productivity goals without stopping.
+						{t('common:servcies.os.desc')}
 					</p>
 
 					<div className={styles['services__offers-content']}>

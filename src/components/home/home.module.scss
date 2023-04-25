@@ -61,7 +61,11 @@
 	&__offers,
 	&__us {
 		&-card {
-			@apply py-4 lg:py-[38px] px-[18px] bg-[#F6F6F6] rounded-tl-default rounded-tr-default  lg:min-h-0 lg:h-[632px] xl:h-[577px] 2xl:max-h-[490px] mb-6 border-b-2 border-colorPrimary;
+			@apply py-4 lg:py-[38px] px-[18px] bg-[#F6F6F6] rounded-tl-default rounded-tr-default  lg:min-h-0 lg:h-[804px] xl:h-[750px] 2xl:max-h-[612px] mb-6 border-b-2 border-colorPrimary;
+
+			&--is-germany {
+				@apply lg:h-[1100px] lg:min-h-0  xl:h-[875px] 2xl:max-h-[753px];
+			}
 
 			&-wrapper {
 				@apply columns-1 lg:columns-3 mt-4;
@@ -89,7 +93,11 @@
 		@apply container mb-[112px];
 
 		&-card {
-			@apply max-h-[583px] md:min-h-[406px];
+			@apply max-h-[680px] lg:min-h-[406px];
+
+			&--is-germany {
+				@apply lg:min-h-[866px] 2xl:min-h-0 2xl:h-[682px]
+			}
 		}
 	}
 

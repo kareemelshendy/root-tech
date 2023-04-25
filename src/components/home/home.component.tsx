@@ -14,10 +14,15 @@ import {
 } from '@/components';
 import styles from './home.module.scss';
 import Link from 'next/link';
+import Trans from 'next-translate/Trans';
+import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 interface Props {}
 
 export const Home: React.FC<Props> = () => {
+	const { t } = useTranslation();
+	const { locale } = useRouter();
 	return (
 		<>
 			<section className={styles['home__hero']}>
@@ -55,18 +60,26 @@ export const Home: React.FC<Props> = () => {
 					<div className={styles['home__about-wrapper']}>
 						<div className={styles['home__about-content']}>
 							<h3 className={styles['home__about-content-title']}>
-								Who we {''}
-								<span className='text-colorPrimary'>Are?</span>
+								<Trans
+									i18nKey='common:about.title'
+									components={[
+										<span
+											key={'s0'}
+											className='text-colorPrimary'
+										/>,
+									]}
+								/>
 							</h3>
 
 							<p className={styles['home__about-content-desc']}>
-								We are a leading IT company with headquarters in
-								Bochum, Germany , consisting of highly qualified
-								software and hardware engineers with the mission
-								to provide high quality, innovative and
-								cost-effective solutions and professional
-								outsourcing services for business processes .
+								{t('common:about.desc-1')}
 							</p>
+							{/* <p className={styles['home__about-content-desc']}>
+								{t('common:about.desc-2')}
+							</p>
+							<p className={styles['home__about-content-desc']}>
+								{t('common:about.desc-3')}
+							</p> */}
 						</div>
 						<img
 							src='/images/home-about.png'
@@ -79,24 +92,36 @@ export const Home: React.FC<Props> = () => {
 			<section id='home'>
 				<div className={styles['home__offers']}>
 					<h3 className={styles['home__subtitle']}>
-						What we&apos;re{' '}
-						<span className='text-colorPrimary'>Offering?</span>
+						{/* What we&apos;re{' '}
+						<span className='text-colorPrimary'>Offering?</span> */}
+						<Trans
+							i18nKey='common:servcies.title'
+							components={[
+								<span
+									key={'s0'}
+									className='text-colorPrimary'
+								/>,
+							]}
+						/>
 					</h3>
 
 					<Tabs />
 					<div className={styles['home__offers-card-wrapper']}>
-						<div className={styles['home__offers-card']}>
+						<div
+							className={`${styles['home__offers-card']} ${
+								locale === 'de'
+									? styles['home__offers-card--is-germany']
+									: ''
+							}`.trim()}>
 							<span className={styles['home__offers-card-icon']}>
 								<DatabaseIcon />
 							</span>
 							<h4 className={styles['home__offers-card-title']}>
-								Database
+								{t('common:servcies.database.title')}
 							</h4>
 
 							<p className={styles['home__offers-card-desc']}>
-								Over 20 years of know-how in database
-								development, implementation and maintenance, We
-								design a database that is tailored to you.
+								{t('common:servcies.database.desc')}
 							</p>
 
 							<div className={styles['home__offers-card-imgs']}>
@@ -112,19 +137,21 @@ export const Home: React.FC<Props> = () => {
 								/>
 							</div>
 						</div>
-						<div className={styles['home__offers-card']}>
+						<div
+							className={`${styles['home__offers-card']} ${
+								locale === 'de'
+									? styles['home__offers-card--is-germany']
+									: ''
+							}`.trim()}>
 							<span className={styles['home__offers-card-icon']}>
 								<LockIcon />
 							</span>
 							<h4 className={styles['home__offers-card-title']}>
-								Security
+								{t('common:servcies.security.title')}
 							</h4>
 
 							<p className={styles['home__offers-card-desc']}>
-								The Expertise that our team possesses embraces a
-								wide range of custom services. Providing
-								advanced network performance and security
-								solutions.
+								{t('common:servcies.security.desc')}
 							</p>
 
 							<div className={styles['home__offers-card-imgs']}>
@@ -150,19 +177,21 @@ export const Home: React.FC<Props> = () => {
 								/>
 							</div>
 						</div>
-						<div className={styles['home__offers-card']}>
+						<div
+							className={`${styles['home__offers-card']} ${
+								locale === 'de'
+									? styles['home__offers-card--is-germany']
+									: ''
+							}`.trim()}>
 							<span className={styles['home__offers-card-icon']}>
 								<WindowsIcon />
 							</span>
 							<h4 className={styles['home__offers-card-title']}>
-								OS
+								{t('common:servcies.os.title')}
 							</h4>
 
 							<p className={styles['home__offers-card-desc']}>
-								Let Us support and configure your IT structure
-								24\7,start your work efficiently and effectively
-								and achieve your productivity goals without
-								stopping.
+								{t('common:servcies.os.desc')}
 							</p>
 
 							<div className={styles['home__offers-card-imgs']}>
@@ -198,52 +227,63 @@ export const Home: React.FC<Props> = () => {
 			<section id='us'>
 				<div className={styles['home__us']}>
 					<h3 className={styles['home__subtitle']}>
-						What we&apos;re{' '}
-						<span className='text-colorPrimary'>Offering?</span>
+						<Trans
+							i18nKey='common:servcies.title'
+							components={[
+								<span
+									key={'s0'}
+									className='text-colorPrimary'
+								/>,
+							]}
+						/>
 					</h3>
 					<div className={styles['home__us-card-wrapper']}>
-						<div className={styles['home__us-card']}>
+						<div className={`${styles['home__us-card']} ${
+								locale === 'de'
+									? styles['home__us-card--is-germany']
+									: ''
+							}`.trim()}>
 							<span className={styles['home__us-card-icon']}>
 								<DollarCircleIcon />
 							</span>
 							<h4 className={styles['home__us-card-title']}>
-								Cost-Effective and flexibility
+								{t('common:servcies.cost.title')}
 							</h4>
 
 							<p className={styles['home__us-card-desc']}>
-								With our world-class professional developers and
-								our great tools and technologies, we will
-								improve your experience and help your business
-								growth with custom mobile apps for iOS and
-								Android.
+								{t('common:servcies.cost.desc')}
 							</p>
 						</div>
-						<div className={styles['home__us-card']}>
+						<div className={`${styles['home__us-card']} ${
+								locale === 'de'
+									? styles['home__us-card--is-germany']
+									: ''
+							}`.trim()}>
 							<span className={styles['home__us-card-icon']}>
 								<ClockIcon />
 							</span>
 							<h4 className={styles['home__us-card-title']}>
-								Faster to the market
+								{t('common:servcies.fast.title')}
 							</h4>
 
 							<p className={styles['home__us-card-desc']}>
-								With our professional and experienced developers
-								we can insure that your project will go live as
-								fast as possible
+								{t('common:servcies.fast.desc')}
 							</p>
 						</div>
-						<div className={styles['home__us-card']}>
+						<div className={`${styles['home__us-card']} ${
+								locale === 'de'
+									? styles['home__us-card--is-germany']
+									: ''
+							}`.trim()}>
 							<span className={styles['home__us-card-icon']}>
 								<PercentageCircleIcon />
 							</span>
 							<h4 className={styles['home__us-card-title']}>
-								Full Coverage
+								{t('common:servcies.coverage.title')}{' '}
 							</h4>
 
 							<p className={styles['home__us-card-desc']}>
-								Project success and your great experience is our
-								main priority. we will take care of every
-								details from start to finish
+								{t('common:servcies.coverage.desc')}
 							</p>
 						</div>
 					</div>
@@ -253,8 +293,7 @@ export const Home: React.FC<Props> = () => {
 			<section className={styles['home__your-projects']}>
 				<div className={styles['home__your-projects-wrapper']}>
 					<h3 className={styles['home__your-projects-title']}>
-						Let&apos;s build your project and transform your dreams
-						into reality
+						{t('common:build')}
 					</h3>
 					<Link
 						href={'/contact-us'}
@@ -284,9 +323,7 @@ export const Home: React.FC<Props> = () => {
 								className={
 									styles['home__countact-us-content-desc']
 								}>
-								We are working with clients of all sizes from
-								new start-up business to well-established
-								businesses
+								{t('common:contact.desc')}
 							</p>
 
 							<h4

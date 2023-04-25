@@ -1,20 +1,33 @@
+/* eslint-disable @next/next/no-img-element */
+import useTranslation from 'next-translate/useTranslation';
+import Trans from 'next-translate/Trans';
 import styles from './about.module.scss';
 
 interface Props {}
 
 export const About: React.FC<Props> = () => {
+	const { t } = useTranslation();
 	return (
 		<section className={styles['about']}>
 			<div className='container'>
 				<h2 className={styles['about__title']}>
-					Who we <span className='text-colorPrimary'>Are?</span>
+					{/* Who we <span className='text-colorPrimary'>Are?</span> */}
+					<Trans
+						i18nKey='common:about.title'
+						components={[
+							<span key={'s0'} className='text-colorPrimary' />,
+						]}
+					/>
 				</h2>
 				<p className={styles['about__desc']}>
-					We are a leading IT company with headquarters in Bochum,
-					Germany , consisting of highly qualified software and
-					hardware engineers with the mission to provide high quality,
-					innovative and cost-effective solutions and professional,
-					outsourcing services for business processes .
+					{t('common:about.desc-1')}
+				</p>
+				<p className={styles['about__desc']}>
+					{t('common:about.desc-2')}
+				</p>
+				<p className={styles['about__desc']}>
+					{' '}
+					{t('common:about.desc-3')}
 				</p>
 			</div>
 			<div className={styles['about__img']}></div>
@@ -23,18 +36,19 @@ export const About: React.FC<Props> = () => {
 				<div className={styles['about__vision-wrapper']}>
 					<div className={styles['about__vision-content']}>
 						<h3 className={styles['about__vision-content-title']}>
-							Our{' '}
-							<span className='text-colorPrimary'>Vision</span>
+							<Trans
+								i18nKey='common:about.vision'
+								components={[
+									<span
+										key={'s0'}
+										className='text-colorPrimary'
+									/>,
+								]}
+							/>
 						</h3>
 
 						<p className={styles['about__vision-content-desc']}>
-							At iRoot Tech, our vision is to Build a healthy
-							societies at various levels & strong economy, and
-							create innovative and intuitive software solutions
-							that empower businesses and individuals to achieve
-							their goals with ease. We believe that technology
-							should be accessible to everyone and that software
-							should be designed with the user in mind.
+							{t('common:about.vision-desc')}
 						</p>
 					</div>
 					<img
@@ -53,19 +67,19 @@ export const About: React.FC<Props> = () => {
 					/>
 					<div className={styles['about__mission-content']}>
 						<h3 className={styles['about__mission-content-title']}>
-							Our{' '}
-							<span className='text-colorPrimary'>Mission</span>
+							<Trans
+								i18nKey='common:about.mission'
+								components={[
+									<span
+										key={'s0'}
+										className='text-colorPrimary'
+									/>,
+								]}
+							/>
 						</h3>
 
 						<p className={styles['about__mission-content-desc']}>
-							We help companies to process the data with new ways,
-							discovering hidden insights & patterns by using the
-							most efficient and effective technologies. We
-							believe that every business is different, and
-							therefore, software solutions should be tailored to
-							fit their requirements. We are committed to
-							delivering high-quality software products that are
-							user-friendly, reliable, and scalable.
+							{t('common:about.mission-desc')}
 						</p>
 					</div>
 				</div>

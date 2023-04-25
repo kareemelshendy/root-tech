@@ -6,5 +6,84 @@
         "about-us": "Über uns",
         "contact-us": "kontaktiere uns",
         "top": "Brauchen Sie Hilfe? sprechen sie mit unseren experten"
+    },
+    "about": {
+        "title": "Wer sind <0>wir?</0>",
+        "desc-1": "Suchen Sie nach einem vertrauenswürdigen IT-Partner, der Ihnen hilft, Ihre Geschäftsziele zu erreichen? IROOT Technology ist ein führendes IT-Unternehmen mit Sitz in Bochum, Deutschland und beschäftigt hochqualifizierte Software- und Hardware-Ingenieure, die sich auf die Bereitstellung von hochwertigen, innovativen und kosteneffektiven Lösungen für Unternehmen konzentrieren.",
+        "desc-2": "Ob Sie maßgeschneiderte Software-Entwicklung, Software-Integration oder professionelle Outsourcing-Dienstleistungen benötigen, wir verfügen über die Expertise, um die Lösungen zu liefern, die Sie benötigen. Unser kundenorientierter Ansatz stellt sicher, dass wir eng mit Ihnen zusammenarbeiten, um Ihre einzigartigen Bedürfnisse zu verstehen und maßgeschneiderte Lösungen zu entwickeln, die Ihren spezifischen Anforderungen entsprechen.",
+        "desc-3": "Mit unserem Engagement für Exzellenz und Kundenzufriedenheit können Sie sicher sein, dass Sie den höchsten Servicelevel und außergewöhnliche Ergebnisse erhalten, die Ihre Erwartungen übertreffen. Setzen Sie sich nicht mit weniger als dem Besten zufrieden, wenn es um Ihr Geschäft geht. Kontaktieren Sie uns noch heute, um mehr darüber zu erfahren, wie unser Expertenteam Ihnen mit unseren innovativen und kosteneffektiven Lösungen und professionellen Outsourcing-Dienstleistungen helfen kann, Ihre Ziele zu erreichen.",
+        "vision": "unsere <0>Vision</0>",
+        "vision-desc": "Bei IROOT Technology ist unsere Vision, durch innovative Softwarelösungen eine bessere Gesellschaft und eine blühende Wirtschaft zu schaffen, die es Unternehmen und Einzelpersonen erleichtern, ihre Ziele zu erreichen. Wir glauben, dass Technologie für alle zugänglich sein sollte und dass benutzerzentriertes Software-Design für den Erfolg unerlässlich ist.",
+        "mission": "unsere <0>Aufgabe</0>",
+        "mission-desc": "Unsere Mission ist es, Unternehmen dabei zu helfen, durch innovative und effiziente Technologien verborgene Erkenntnisse und Muster in ihren Daten zu entdecken. Wir verstehen, dass jedes Unternehmen einzigartig ist und unsere Softwarelösungen individuell auf ihre spezifischen Bedürfnisse zugeschnitten sind. Unser Engagement gilt der Bereitstellung von hochwertigen Softwareprodukten, die benutzerfreundlich, zuverlässig und skalierbar sind, um Unternehmen bei Wachstum und Erfolg zu unterstützen."
+    },
+    "servcies": {
+        "title": "Was bieten <0>wir an?</0>",
+        "desc": "Transformieren Sie Ihr Geschäft mit unserem umfassenden Angebot an IT-Services, die auf Ihre einzigartigen Bedürfnisse zugeschnitten sind. Von Software-Entwicklung bis hin zu IT-Beratung - wir haben Sie abgedeckt. Unser Experten-Team wird Ihnen helfen, die Kraft der Technologie zu nutzen, um Wachstum und Effizienz in Ihrem Unternehmen zu fördern. Mit unseren modernsten Tools und Technologien werden wir Ihnen helfen, einen Schritt voraus zu sein und Ihre Ziele schneller zu erreichen. Lassen Sie uns zusammenarbeiten, um Ihr Unternehmen auf die nächste Stufe zu bringen.",
+        "mobile": {
+            "title": "Mobile App System",
+            "desc": "Steigern Sie Ihr Geschäft mit individuellen mobilen Apps für iOS und Android. Unser erstklassiges Team professioneller Entwickler sowie modernste Tools und Technologien können Ihnen dabei helfen, zuverlässige, skalierbare und benutzerfreundliche mobile Apps zu erstellen, die außergewöhnliche Benutzererfahrungen bieten. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
+        },
+        "web": {
+            "title": "Web-Entwicklung",
+            "desc": "Bereit, Ihr Unternehmen online zu bringen und mehr Kunden zu erreichen? Unsere erfahrenen Webentwickler erstellen schnelle, zuverlässige und reaktionsschnelle maßgeschneiderte Websites und Webanwendungen, die Unternehmen dabei unterstützen, online zu wachsen und erfolgreich zu sein. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
+        },
+        "erb": {
+            "title": "ERP System",
+            "desc": "Bereit, Ihre Geschäftsabläufe zu optimieren und Ihre Ergebnisse zu verbessern? Unser Expertenteam kann Ihnen dabei helfen, eine maßgeschneiderte ERP-Lösung umzusetzen, die auf Ihre einzigartigen Bedürfnisse zugeschnitten ist. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
+        },
+        "ui": {
+            "title": "UI/UX Design",
+            "desc": "Suchen Sie nach einer Möglichkeit, eine Benutzeroberfläche zu erstellen, die Ihr Publikum begeistert und das Wachstum Ihres Unternehmens fördert? Unsere erfahrenen UI/UX-Designer können Ihnen dabei helfen. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
+        },
+        "software": {
+            "title": "Software Update",
+            "desc": "Halten Sie Ihre Software auf dem neuesten Stand mit unseren professionellen Software-Update-Diensten. Unser Team bietet umfassende Lösungen, die auf Ihre speziellen Bedürfnisse und Ziele zugeschnitten sind. Kontaktieren Sie uns noch heute, um mehr zu erfahren und der Konkurrenz voraus zu bleiben."
+        },
+        "database": {
+            "title": "Datenbank",
+            "desc": "Schöpfen Sie das volle Potenzial Ihrer Unternehmensdaten aus mit unseren professionellen Datenbankdienstleistungen. Unser Expertenteam bietet maßgeschneiderte Lösungen, die für Datenkorrektheit, Sicherheit und Zuverlässigkeit sorgen, sodass Sie fundierte Entscheidungen treffen und das Wachstum Ihres Unternehmens vorantreiben können. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
+        },
+        "security": {
+            "title": "Sicherheitslösungen",
+            "desc": "Unser Expertenteam bietet fortschrittliche Netzwerkperformance- und Sicherheitslösungen, die auf die Bedürfnisse Ihres Unternehmens zugeschnitten sind. Von Firewalls bis hin zur Leistungsoptimierung bieten wir umfassende Lösungen, die sicherstellen, dass Ihr Unternehmen reibungslos und sicher läuft. Kontaktieren Sie uns noch heute, um mehr zu erfahren."
+        },
+        "os": {
+            "title": "Betriebssystem",
+            "desc": "Lassen Sie uns Ihre IT-Struktur rund um die Uhr unterstützen und konfigurieren, um Ihre Arbeit effizient und effektiv zu starten und Ihre Produktivitätsziele ohne Unterbrechungen zu erreichen."
+        },
+        "cost": {
+            "title": "Kosteneffektivität und Flexibilität.",
+            "desc": "Entfesseln Sie kosteneffektive und flexible Lösungen mit uns. Unser Team bietet maßgeschneiderte Lösungen, die Ihren einzigartigen Geschäftsanforderungen gerecht werden, ohne Ihr Budget zu opfern. Erleben Sie noch heute eine höhere Effizienz und Produktivität."
+        },
+        "fast": {
+            "title": "Schneller auf den Markt.",
+            "desc": "Überholen Sie die Konkurrenz mit blitzschnellen Software-Entwicklungsdienstleistungen. Unser agiler Ansatz gewährleistet eine schnelle Lieferung ohne Kompromisse bei der Qualität und verschafft Ihnen den Vorteil, den Sie benötigen, um auf dem heutigen Markt erfolgreich zu sein. Warten Sie nicht, kontaktieren Sie uns jetzt, um das Wachstum Ihres Unternehmens zu beschleunigen."
+        },
+        "coverage": {
+            "title": "Vollständige Abdeckung.",
+            "desc": "Erleben Sie volle Abdeckung und Ruhe mit unseren umfassenden Lösungen, die allen Ihren Geschäftsbedürfnissen gerecht werden."
+        }
+    },
+    "build": "Bringen Sie Ihre Vision zum Leben mit unserer Projektaufbau-Expertise. Lassen Sie uns Ihre Träume in die Realität umsetzen.",
+    "contact": {
+        "title": "Benötigen Sie weitere Hilfe?",
+        "subtitle": "kontaktiere uns",
+        "talk": "Let's Talk",
+        "desc": "Ihre Vision, unsere Expertise. Lassen Sie uns zusammenarbeiten, um Ihre Ideen zum Leben zu erwecken und Ihre Ziele zu erreichen.",
+        "contacts": "Kontakte",
+        "form": {
+            "labels": {
+                "name": "Ihren Namen",
+                "email": "deine E-Mail",
+                "description": "Beschreibung",
+                "subscribe": "Newsletter abonnieren",
+                "file": "Datei anhängen"
+            },
+            "placeholder": {
+                "description": "Beschreibung Ihrer Projekte"
+            }
+        },
+        "submit": "Einreichen"
     }
 }

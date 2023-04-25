@@ -3,9 +3,11 @@ import { ErpIcon, MobileIcon, UiIcon, UpdateIcon, WebIcon } from '@/components';
 import { Tab, TabList, TabPanel, Tabs as Tbs } from 'react-tabs';
 import 'react-tabs/style/react-tabs.scss';
 import styles from './tabs.module.scss';
+import useTranslation from 'next-translate/useTranslation';
 interface Props {}
 
 export const Tabs: React.FC<Props> = () => {
+	const { t } = useTranslation();
 	return (
 		<Tbs className={styles['tabs']} selectedTabClassName={'tabs-selected'}>
 			<TabList className={styles['tabs__list']}>
@@ -13,31 +15,31 @@ export const Tabs: React.FC<Props> = () => {
 					<span className={styles['tabs__tab-icon']}>
 						<MobileIcon />
 					</span>{' '}
-					Mobile App System
+					{t('common:servcies.mobile.title')}
 				</Tab>
 				<Tab className={styles['tabs__tab']}>
 					<span className={styles['tabs__tab-icon']}>
 						<WebIcon />
 					</span>{' '}
-					Web Development
+					{t('common:servcies.web.title')}
 				</Tab>
 				<Tab className={styles['tabs__tab']}>
 					<span className={styles['tabs__tab-icon']}>
 						<ErpIcon />
 					</span>{' '}
-					ERP System
+					{t('common:servcies.erb.title')}
 				</Tab>
 				<Tab className={styles['tabs__tab']}>
 					<span className={styles['tabs__tab-icon']}>
 						<UiIcon />
 					</span>{' '}
-					UI/UX Design
+					{t('common:servcies.ui.title')}
 				</Tab>
 				<Tab className={styles['tabs__tab']}>
 					<span className={styles['tabs__tab-icon']}>
 						<UpdateIcon />
 					</span>{' '}
-					Software Update
+					{t('common:servcies.software.title')}
 				</Tab>
 			</TabList>
 
@@ -50,10 +52,7 @@ export const Tabs: React.FC<Props> = () => {
 					/>
 					<div className={styles['tabs__panel-content']}>
 						<p className={styles['tabs__panel-content-text']}>
-							With our world-class professional developers and our
-							great tools and technologies, we will improve your
-							experience and help your business growth with custom
-							mobile apps for iOS and Android.
+							{t('common:servcies.mobile.desc')}
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
@@ -117,10 +116,7 @@ export const Tabs: React.FC<Props> = () => {
 					/>
 					<div className={styles['tabs__panel-content']}>
 						<p className={styles['tabs__panel-content-text']}>
-							With our world-class professional developers and our
-							great tools and technologies, we will improve your
-							experience and help your business growth with custom
-							mobile apps for iOS and Android.
+							{t('common:servcies.web.desc')}
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
@@ -203,10 +199,7 @@ export const Tabs: React.FC<Props> = () => {
 					/>
 					<div className={styles['tabs__panel-content']}>
 						<p className={styles['tabs__panel-content-text']}>
-							With our world-class professional developers and our
-							great tools and technologies, we will improve your
-							experience and help your business growth with custom
-							mobile apps for iOS and Android.
+							{t('common:servcies.erb.desc')}
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
@@ -256,10 +249,7 @@ export const Tabs: React.FC<Props> = () => {
 					/>
 					<div className={styles['tabs__panel-content']}>
 						<p className={styles['tabs__panel-content-text']}>
-							With our world-class professional developers and our
-							great tools and technologies, we will improve your
-							experience and help your business growth with custom
-							mobile apps for iOS and Android.
+							{t('common:servcies.ui.desc')}
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>
@@ -318,10 +308,7 @@ export const Tabs: React.FC<Props> = () => {
 					/>
 					<div className={styles['tabs__panel-content']}>
 						<p className={styles['tabs__panel-content-text']}>
-							With our world-class professional developers and our
-							great tools and technologies, we will improve your
-							experience and help your business growth with custom
-							mobile apps for iOS and Android.
+							{t('common:servcies.software.desc')}
 						</p>
 
 						<div className={styles['tabs__panel-content-tech']}>

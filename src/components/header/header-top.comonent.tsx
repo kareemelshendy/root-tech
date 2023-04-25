@@ -39,7 +39,7 @@ export const HeaderTop: React.FC<Props> = () => {
 					{locale === 'de' ? 'English' : 'germany'}{' '}
 					<span>
 						{' '}
-						<DownArrowIcon />{' '}
+						{/* <DownArrowIcon />{' '} */}
 					</span>
 				</button>
 			</div>
