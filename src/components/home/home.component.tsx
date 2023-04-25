@@ -238,7 +238,8 @@ export const Home: React.FC<Props> = () => {
 						/>
 					</h3>
 					<div className={styles['home__us-card-wrapper']}>
-						<div className={`${styles['home__us-card']} ${
+						<div
+							className={`${styles['home__us-card']} ${
 								locale === 'de'
 									? styles['home__us-card--is-germany']
 									: ''
@@ -254,7 +255,8 @@ export const Home: React.FC<Props> = () => {
 								{t('common:servcies.cost.desc')}
 							</p>
 						</div>
-						<div className={`${styles['home__us-card']} ${
+						<div
+							className={`${styles['home__us-card']} ${
 								locale === 'de'
 									? styles['home__us-card--is-germany']
 									: ''
@@ -270,7 +272,8 @@ export const Home: React.FC<Props> = () => {
 								{t('common:servcies.fast.desc')}
 							</p>
 						</div>
-						<div className={`${styles['home__us-card']} ${
+						<div
+							className={`${styles['home__us-card']} ${
 								locale === 'de'
 									? styles['home__us-card--is-germany']
 									: ''
@@ -306,9 +309,11 @@ export const Home: React.FC<Props> = () => {
 			<section id='contact-us' className={styles['home__countact-us']}>
 				<div className={styles['home__countact-us-wrapper']}>
 					<h2 className={styles['home__countact-us-title']}>
-						Need more help?
+						{t('common:contact.title')}
 						<br />
-						<span className='text-colorPrimary'>Contact us</span>
+						<span className='text-colorPrimary'>
+							{t('common:contact.subtitle')}
+						</span>
 					</h2>
 
 					<div className={styles['home__countact-us-content']}>
@@ -317,7 +322,7 @@ export const Home: React.FC<Props> = () => {
 								className={
 									styles['home__countact-us-content-title']
 								}>
-								Let&apos;s Talk
+								{t('common:contact.talk')}
 							</h3>
 							<p
 								className={
@@ -332,7 +337,7 @@ export const Home: React.FC<Props> = () => {
 										'home__countact-us-content-contacts-title'
 									]
 								}>
-								Contacts
+								{t('common:contact.contacts')}
 							</h4>
 
 							<div
@@ -360,8 +365,8 @@ export const Home: React.FC<Props> = () => {
 									<span>
 										<PhoneIcon />
 									</span>
-									<Link href={'tel:+4915754411184'}>
-										(+49) 157 54411184
+									<Link href={'tel:+4917648985373'}>
+										(+49) 176 48985373
 									</Link>
 								</div>
 								<div
@@ -373,8 +378,8 @@ export const Home: React.FC<Props> = () => {
 									<span>
 										<EmailIcon />
 									</span>
-									<Link href={'mailto:Info@iroottech.com'}>
-										Info@iroottech.com
+									<Link href={'mailto:Sales@iroottech.de'}>
+										Sales@iroottech.de
 									</Link>
 								</div>
 							</div>

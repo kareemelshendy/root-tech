@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import {
 	EmailIcon,
 	FacebookIcon,
@@ -11,9 +12,11 @@ import {
 } from '@/components';
 import styles from './footer.module.scss';
 import Link from 'next/link';
+import useTranslation from 'next-translate/useTranslation';
 
 interface Props {}
 export const Footer: React.FC<Props> = () => {
+	const { t } = useTranslation();
 	return (
 		<>
 			<footer className={styles['footer']}>
@@ -38,16 +41,16 @@ export const Footer: React.FC<Props> = () => {
 								<span>
 									<PhoneIcon />
 								</span>
-								<Link href={'tel:+4915754411184'}>
-									(+49) 157 54411184
+								<Link href={'tel:+4917648985373'}>
+									(+49) 176 48985373
 								</Link>
 							</div>
 							<div className={styles['footer__top-contact-item']}>
 								<span>
 									<EmailIcon />
 								</span>
-								<Link href={'mailto:Info@iroottech.com'}>
-									Info@iroottech.com
+								<Link href={'mailto:Sales@iroottech.de'}>
+									Sales@iroottech.de
 								</Link>
 							</div>
 						</div>
@@ -67,7 +70,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Home
+											{t('common:footer.home')}
 										</Link>
 									</li>
 
@@ -77,7 +80,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Services
+											{t('common:footer.services')}
 										</Link>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -86,7 +89,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Policies
+											{t('common:footer.policies')}
 										</Link>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -95,14 +98,14 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											About Us
+											{t('common:footer.about-us')}
 										</Link>
 									</li>
 								</ul>
 							</nav>
 							<nav className={styles['footer__nav']}>
 								<h5 className={styles['footer__nav-title']}>
-									Company
+									{t('common:footer.company')}
 								</h5>
 
 								<ul className={styles['footer__nav-menu']}>
@@ -112,7 +115,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											About
+											{t('common:footer.about')}
 										</Link>
 									</li>
 
@@ -122,7 +125,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Contact
+											{t('common:footer.contact')}
 										</Link>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -131,7 +134,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Cookies Policy
+											{t('common:footer.cookies-policy')}
 										</Link>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -140,7 +143,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Privacy Policy
+											{t('common:footer.privacy-policy')}
 										</Link>
 									</li>
 									{/* <li className={styles['footer__nav-item']}>
@@ -156,7 +159,7 @@ export const Footer: React.FC<Props> = () => {
 							</nav>
 							<nav className={styles['footer__nav']}>
 								<h5 className={styles['footer__nav-title']}>
-									Services
+									{t('common:footer.services')}
 								</h5>
 
 								<ul className={styles['footer__nav-menu']}>
@@ -165,7 +168,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Mobile App System
+											{t('common:servcies.mobile.title')}
 										</p>
 									</li>
 
@@ -174,7 +177,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Web Development
+											{t('common:servcies.web.title')}
 										</p>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -182,7 +185,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											ERB System
+											{t('common:servcies.erb.title')}
 										</p>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -190,7 +193,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											UI/UX Design
+											{t('common:servcies.ui.title')}{' '}
 										</p>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -198,7 +201,9 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Security
+											{t(
+												'common:servcies.security.title'
+											)}
 										</p>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -206,7 +211,9 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											Database
+											{t(
+												'common:servcies.database.title'
+											)}
 										</p>
 									</li>
 									<li className={styles['footer__nav-item']}>
@@ -214,7 +221,7 @@ export const Footer: React.FC<Props> = () => {
 											className={
 												styles['footer__nav-link']
 											}>
-											OS
+											{t('common:servcies.os.title')}
 										</p>
 									</li>
 								</ul>
@@ -223,13 +230,13 @@ export const Footer: React.FC<Props> = () => {
 
 						<div className={styles['footer__help']}>
 							<h5 className={styles['footer__help-title']}>
-								Need Help?
+								{t('common:footer.need-help')}
 							</h5>
 							<Link
 								href={'/contact-us'}
 								className={styles['footer__help-link']}>
 								{' '}
-								Contact US
+								{t('common:footer.contact-us')}
 							</Link>
 						</div>
 					</div>

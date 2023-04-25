@@ -3,6 +3,7 @@ import styles from './flie-input.module.scss';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/router';
 import { Control, FieldValues, useController } from 'react-hook-form';
+import useTranslation from 'next-translate/useTranslation';
 
 interface Props {
 	name: string;
@@ -26,6 +27,7 @@ export const FileInput: React.FC<Props> = ({
 		field,
 		formState: { errors },
 	} = useController({ name, control, rules });
+	const { t } = useTranslation();
 
 	const handleFileChange = (e: any) => {
 		console.log('change', e.target.files);
@@ -61,7 +63,7 @@ export const FileInput: React.FC<Props> = ({
 						<span>
 							<AttachIcon />
 						</span>
-						Attach file
+						{t('common:contact.form.labels.file')}
 					</label>
 
 					<p
@@ -70,8 +72,7 @@ export const FileInput: React.FC<Props> = ({
 								? 'text-current  '
 								: 'text-white text-center md:text-left'
 						}`}>
-						Up to 3 files in any format The maximum file size is
-						10MB
+						{t('common:contact.form.max')}
 					</p>
 				</div>
 				<div

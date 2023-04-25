@@ -69,7 +69,7 @@
     "contact": {
         "title": "Benötigen Sie weitere Hilfe?",
         "subtitle": "kontaktiere uns",
-        "talk": "Let's Talk",
+        "talk": "Lass uns reden",
         "desc": "Ihre Vision, unsere Expertise. Lassen Sie uns zusammenarbeiten, um Ihre Ideen zum Leben zu erwecken und Ihre Ziele zu erreichen.",
         "contacts": "Kontakte",
         "form": {
@@ -82,8 +82,22 @@
             },
             "placeholder": {
                 "description": "Beschreibung Ihrer Projekte"
-            }
-        },
-        "submit": "Einreichen"
+            },
+            "submit": "Einreichen",
+            "max": "Bis zu 3 Dateien in beliebigem Format Die maximale Dateigröße beträgt 10 MB"
+        }
+    },
+    "footer": {
+        "home": "heim",
+        "services": "Dienstleistungen",
+        "policies": "Richtlinien",
+        "about-us": "Über uns",
+        "contact-us": "kontaktiere uns",
+        "company": "Unternehmen",
+        "cookies-policy": "Cookie-Richtlinie",
+        "privacy-policy": "Datenschutz-Bestimmungen",
+        "contact": "Kontakt",
+        "need-help": "brauchen Sie Hilfe?",
+        "about":"um"
     }
 }

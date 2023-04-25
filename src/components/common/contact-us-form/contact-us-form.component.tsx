@@ -2,8 +2,10 @@ import { useForm } from 'react-hook-form';
 import styles from './contact-us-form.module.scss';
 import { ErrorMessage, FileInput, Input } from '@/components';
 import { useRouter } from 'next/router';
+import useTranslation from 'next-translate/useTranslation';
 interface Props {}
 export const ContactUsForm: React.FC<Props> = () => {
+	const { t } = useTranslation();
 	const {
 		handleSubmit,
 		control,
@@ -21,16 +23,16 @@ export const ContactUsForm: React.FC<Props> = () => {
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>
 			<Input
 				name='name'
-				placeholder='Your name'
-				label='Your name'
+				placeholder={t('common:contact.form.labels.name')}
+				label={t('common:contact.form.labels.name')}
 				control={control}
 				error={errors}
 				required
 			/>
 			<Input
 				name='email'
-				placeholder='Your email'
-				label='Your email'
+				placeholder={t('common:contact.form.labels.email')}
+				label={t('common:contact.form.labels.email')}
 				control={control}
 				type='email'
 				error={errors}
@@ -38,8 +40,8 @@ export const ContactUsForm: React.FC<Props> = () => {
 			/>
 			<Input
 				name='desciption'
-				placeholder='Description of your project'
-				label='Desciption'
+				placeholder={t('common:contact.form.placeholder.description')}
+				label={t('common:contact.form.labels.description')}
 				control={control}
 				type='textarea'
 				error={errors}
@@ -66,7 +68,7 @@ export const ContactUsForm: React.FC<Props> = () => {
 							className={`${
 								pathname === '/' ? 'text-current' : 'text-white'
 							}`}>
-							Subscribe to newsletter
+							{t('common:contact.form.labels.subscribe')}
 						</label>
 					</div>
 				</div>
@@ -117,7 +119,7 @@ export const ContactUsForm: React.FC<Props> = () => {
 					className={`${styles['form__submit']} ${
 						pathname === '/' ? styles['form__submit--primary'] : ''
 					}`}>
-					submit
+					{t('common:contact.form.submit')}
 				</button>
 			</div>
 		</form>

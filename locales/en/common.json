@@ -82,8 +82,23 @@
             },
             "placeholder": {
                 "description": "Description of your projects"
-            }
-        },
-        "submit": "Submit"
+            },
+            "submit": "Submit",
+            "max": "Up to 3 files in any format The maximum file size is 10MB"
+        }
+    },
+    "footer": {
+        "home": "Home",
+        "services": "Services",
+        "policies": "Policies",
+        "about-us": "About Us",
+        "contact-us": "Contact Us",
+        "company": "Company",
+        "cookies-policy": "Cookies Policy",
+        "privacy-policy": "Privacy Policy",
+        "contact": "Contact",
+        "need-help": "Need Help?",
+        "about": "About"
+        
     }
 }
