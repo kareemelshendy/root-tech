@@ -39,7 +39,7 @@
 	}
 
 	&__help {
-		@apply lg:py-[32px] lg:pr-[80px];
+		@apply lg:py-[32px] lg:pr-[80px] flex items-center flex-col lg:items-start;
 
 		&-title {
 			@apply text-[28px] text-center font-extrabold mb-4 text-white;
