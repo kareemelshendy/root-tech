@@ -1,8 +1,8 @@
 {
     "header": {
-        "home": "Heim",
+        "home": "Main",
         "services": "Dienstleistungen",
-        "policies": "Richtlinien",
+        "policies": "Datenschutz",
         "about-us": "Über uns",
         "contact-us": "kontaktiere uns",
         "top": "Brauchen Sie Hilfe? sprechen sie mit unseren experten"
@@ -98,16 +98,16 @@
         }
     },
     "footer": {
-        "home": "Heim",
+        "home": "Main",
         "services": "Dienstleistungen",
-        "policies": "Richtlinien",
+        "policies": "Datenschutz",
         "about-us": "Über uns",
         "contact-us": "kontaktiere uns",
         "company": "Unternehmen",
         "cookies-policy": "Cookie-Richtlinie",
-        "privacy-policy": "Datenschutz-Bestimmungen",
+        "privacy-policy": "Datenschutz",
         "contact": "Kontakt",
         "need-help": "brauchen Sie Hilfe?",
-        "about": "um"
+        "about": "Über uns"
     }
 }

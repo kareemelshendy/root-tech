@@ -13,10 +13,12 @@ import {
 import styles from './footer.module.scss';
 import Link from 'next/link';
 import useTranslation from 'next-translate/useTranslation';
+import { useRouter } from 'next/router';
 
 interface Props {}
 export const Footer: React.FC<Props> = () => {
 	const { t } = useTranslation();
+	const { locale } = useRouter();
 	return (
 		<>
 			<footer className={styles['footer']}>
@@ -57,10 +59,15 @@ export const Footer: React.FC<Props> = () => {
 					</div>
 
 					<div className={styles['footer__body']}>
-						<div className='flex gap-0 md:gap-[90px] flex-col flex-wrap md:flex-row  lg:gap-[171px]'>
+						<div
+							className={`flex gap-0 md:gap-[50px] flex-col flex-wrap md:flex-row ${
+								locale === 'de'
+									? 'lg:gap-[130px]'
+									: 'lg:gap-[171px]'
+							}`.trim()}>
 							<nav className={styles['footer__nav']}>
 								<h5 className={styles['footer__nav-title']}>
-									I Root Tech
+									IROOT Technology
 								</h5>
 
 								<ul className={styles['footer__nav-menu']}>

@@ -105,7 +105,7 @@ export const Services: React.FC<Props> = () => {
 							))}
 						</ul>
 						<img
-							src='/images/database.png'
+							src='/images/database.jpeg'
 							alt='DataBase'
 							className={styles['services__offers-content-img']}
 						/>
@@ -142,7 +142,7 @@ export const Services: React.FC<Props> = () => {
 							))}
 						</ul>
 						<img
-							src='/images/security.png'
+							src='/images/security.jpeg'
 							alt='DataBase'
 							className={styles['services__offers-content-img']}
 						/>
@@ -180,7 +180,7 @@ export const Services: React.FC<Props> = () => {
 							))}
 						</ul>
 						<img
-							src='/images/os.png'
+							src='/images/os.jpeg'
 							alt='DataBase'
 							className={styles['services__offers-content-img']}
 						/>
