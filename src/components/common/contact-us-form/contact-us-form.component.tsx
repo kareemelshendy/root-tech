@@ -4,6 +4,8 @@ import { ErrorMessage, FileInput, Input } from '@/components';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import sendEmail from '@/lib/sendEmail';
+import { useSendEmail } from '@/hooks';
+import { useEffect } from 'react';
 
 interface Props {}
 export const ContactUsForm: React.FC<Props> = () => {
@@ -14,16 +16,28 @@ export const ContactUsForm: React.FC<Props> = () => {
 		register,
 		trigger,
 		setValue,
+		reset,
 		formState: { errors },
 	} = useForm();
 	const { pathname } = useRouter();
+	const { error, sendContactEmail, isLoading, success } = useSendEmail();
 
-	const onSubmit = async (data: any) => {
+	const onSubmit = (data: any) => {
 		console.log('data', data);
-		await sendEmail(data)
+		sendContactEmail(data);
 	};
+
+	useEffect(() => {
+		if (success) {
+			reset();
+		}
+	}, [success]);
+
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>
+			{success ? (
+				<p>تم ارسال الرساله بنجاح سيتم التواصل مع لاحقا</p>
+			) : null}
 			<Input
 				name='name'
 				placeholder={t('common:contact.form.labels.name')}
@@ -121,8 +135,13 @@ export const ContactUsForm: React.FC<Props> = () => {
 					type='submit'
 					className={`${styles['form__submit']} ${
 						pathname === '/' ? styles['form__submit--primary'] : ''
-					}`}>
-					{t('common:contact.form.submit')}
+					}`}
+					disabled={isLoading}>
+					{isLoading ? (
+						<div className='lds-dual-ring'></div>
+					) : (
+						<>{t('common:contact.form.submit')}</>
+					)}
 				</button>
 			</div>
 		</form>
