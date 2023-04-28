@@ -3,6 +3,8 @@ import styles from './contact-us-form.module.scss';
 import { ErrorMessage, FileInput, Input } from '@/components';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
+import sendEmail from '@/lib/sendEmail';
+
 interface Props {}
 export const ContactUsForm: React.FC<Props> = () => {
 	const { t } = useTranslation();
@@ -16,8 +18,9 @@ export const ContactUsForm: React.FC<Props> = () => {
 	} = useForm();
 	const { pathname } = useRouter();
 
-	const onSubmit = (data: any) => {
+	const onSubmit = async (data: any) => {
 		console.log('data', data);
+		await sendEmail(data)
 	};
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>
@@ -39,7 +42,7 @@ export const ContactUsForm: React.FC<Props> = () => {
 				required
 			/>
 			<Input
-				name='desciption'
+				name='description'
 				placeholder={t('common:contact.form.placeholder.description')}
 				label={t('common:contact.form.labels.description')}
 				control={control}
@@ -52,19 +55,19 @@ export const ContactUsForm: React.FC<Props> = () => {
 				<div>
 					<div className='flex gap-4 items-center '>
 						<input
-							{...register('subscibe', {
+							{...register('subscribe', {
 								required: {
 									value: true,
 									message: 'Required Field',
 								},
 							})}
 							type='checkbox'
-							name='subscibe'
-							id='subscibe'
+							name='subscribe'
+							id='subscribe'
 							className='accent-colorPrimary w-4 h-4 rounded'
 						/>
 						<label
-							htmlFor='subscibe'
+							htmlFor='subscribe'
 							className={`${
 								pathname === '/' ? 'text-current' : 'text-white'
 							}`}>
@@ -72,9 +75,9 @@ export const ContactUsForm: React.FC<Props> = () => {
 						</label>
 					</div>
 				</div>
-				{errors[`subscibe`] ? (
+				{errors[`subscribe`] ? (
 					<ErrorMessage
-						message={errors[`subscibe`].message as string}
+						message={errors[`subscribe`].message as string}
 					/>
 				) : null}
 			</div>
