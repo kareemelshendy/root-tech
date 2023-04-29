@@ -254,7 +254,7 @@ export const Footer: React.FC<Props> = () => {
 					<p className={styles['footer__bottom-copy']}>
 						copyright©iroottech 2022-2023
 					</p>
-					<div className={styles['footer__bottom-social']}>
+					{/* <div className={styles['footer__bottom-social']}>
 						<Link
 							href={'/#'}
 							className={styles['footer__bottom-social-link']}>
@@ -280,7 +280,7 @@ export const Footer: React.FC<Props> = () => {
 							className={styles['footer__bottom-social-link']}>
 							<YoutubeIcon />
 						</Link>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</>
