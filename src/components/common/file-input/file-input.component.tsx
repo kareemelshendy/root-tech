@@ -12,6 +12,7 @@ interface Props {
 	setValue: any;
 	rules?: any;
 	trigger: any;
+	isImageReset: boolean;
 }
 
 export const FileInput: React.FC<Props> = ({
@@ -20,6 +21,7 @@ export const FileInput: React.FC<Props> = ({
 	name,
 	rules,
 	trigger,
+	isImageReset,
 }) => {
 	const [fileList, setFileList] = useState<File[]>([]);
 	const { pathname } = useRouter();
@@ -43,6 +45,12 @@ export const FileInput: React.FC<Props> = ({
 			trigger(name);
 		}
 	}, [fileList, setValue, name]);
+
+	useEffect(() => {
+		if (isImageReset) {
+			setFileList([]);
+		}
+	}, [isImageReset]);
 
 	const deleteImage = (imageIndex: number) => {
 		const updatedFileList = [...fileList];

@@ -5,10 +5,11 @@ import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import sendEmail from '@/lib/sendEmail';
 import { useSendEmail } from '@/hooks';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 interface Props {}
 export const ContactUsForm: React.FC<Props> = () => {
+	const [isImageReset, setIsImageReset] = useState(false);
 	const { t } = useTranslation();
 	const {
 		handleSubmit,
@@ -29,6 +30,8 @@ export const ContactUsForm: React.FC<Props> = () => {
 
 	useEffect(() => {
 		if (success) {
+			console.log({ success });
+			setIsImageReset(true);
 			reset();
 		}
 	}, [success]);
@@ -111,6 +114,7 @@ export const ContactUsForm: React.FC<Props> = () => {
 						name='files'
 						trigger={trigger}
 						setValue={setValue}
+						isImageReset={isImageReset}
 						rules={{
 							required: {
 								value: true,
