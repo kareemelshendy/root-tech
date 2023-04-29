@@ -33,5 +33,6 @@ export const useSendEmail = () => {
 		error,
 		sendContactEmail,
 		success,
+		setSuccess,
 	};
 };

@@ -28,7 +28,8 @@ export const ContactUsForm: React.FC<Props> = () => {
 		formState: { errors },
 	} = useForm();
 	const { pathname } = useRouter();
-	const { error, sendContactEmail, isLoading, success } = useSendEmail();
+	const { error, sendContactEmail, isLoading, success, setSuccess } =
+		useSendEmail();
 
 	const onSubmit = (data: any) => {
 		sendContactEmail(data);
@@ -39,8 +40,11 @@ export const ContactUsForm: React.FC<Props> = () => {
 			setIsFileReset(true);
 			reset();
 			setShowModal(true);
+			setSuccess(false);
 		}
 	}, [success]);
+
+	console.log({ success, isLoading });
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>
