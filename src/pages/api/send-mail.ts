@@ -1,46 +1,46 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import type { NextApiRequest, NextApiResponse } from "next";
-import nodemailer from "nodemailer";
-import multer from "multer";
+import type { NextApiRequest, NextApiResponse } from 'next';
+import nodemailer from 'nodemailer';
+import multer from 'multer';
 
 async function parseFormData(
-  req: NextApiRequest & { files?: any },
-  res: NextApiResponse
+	req: NextApiRequest & { files?: any },
+	res: NextApiResponse
 ) {
-  const storage = multer.memoryStorage();
-  const multerUpload = multer({ storage });
-  const multerFiles = multerUpload.any();
-  await new Promise((resolve, reject) => {
-    multerFiles(req as any, res as any, (result: any) => {
-      if (result instanceof Error) {
-        return reject(result);
-      }
-      return resolve(result);
-    });
-  });
-  return {
-    fields: req.body,
-    files: req.files,
-  };
+	const storage = multer.memoryStorage();
+	const multerUpload = multer({ storage });
+	const multerFiles = multerUpload.any();
+	await new Promise((resolve, reject) => {
+		multerFiles(req as any, res as any, (result: any) => {
+			if (result instanceof Error) {
+				return reject(result);
+			}
+			return resolve(result);
+		});
+	});
+	return {
+		fields: req.body,
+		files: req.files,
+	};
 }
 export const config = {
-  api: {
-    bodyParser: false,
-  },
+	api: {
+		bodyParser: false,
+	},
 };
 export default async function handler(
-  req: NextApiRequest & { files?: any },
-  res: NextApiResponse
+	req: NextApiRequest & { files?: any },
+	res: NextApiResponse
 ) {
-  const result = await parseFormData(req, res);
-  console.log(result);
-  const message = {
-    from: "sales@iroottech.com",
-    to: "abanoub.e.mhanna@gmail.com",
-    subject: `${result.fields.email} request contact-us`,
-    // html: `<p>Name: ${req.body.name} , Email: ${req.body.email} request contact-us with Description: ${req.body.description} </p>`,
+	const result = await parseFormData(req, res);
+	console.log(result);
+	const message = {
+		from: 'sales@iroottech.com',
+		to: 'sales@iroottech.com',
+		subject: `${result.fields.email} request contact-us`,
+		// html: `<p>Name: ${req.body.name} , Email: ${req.body.email} request contact-us with Description: ${req.body.description} </p>`,
 
-    html: `<center style="width: 100%; table-layout: fixed; padding-bottom: 64px">
+		html: `<center style="width: 100%; table-layout: fixed; padding-bottom: 64px">
     <table
       style="
         width: 98%;
@@ -109,6 +109,18 @@ export default async function handler(
                 >
                Email : ${result.fields.email} 
                 </p>
+                <p
+                  style="
+                    font-size: 16px;
+                    line-height: 32px;
+                    color: #333333;
+                    margin: 0;
+                  "
+                >
+                Subscribe to newsletter : ${
+					result.fields.subscribe === 'true' ? 'yes' : 'no'
+				} 
+                </p>
               </td>
             </tr>
           </table>
@@ -138,41 +150,41 @@ export default async function handler(
     </table>
     <!-- End Main Class -->
   </center>`,
-  };
-  const transporter = nodemailer.createTransport({
-    host: "smtp.office365.com",
-    port: 587,
-    auth: {
-      user: "sales@iroottech.com",
-      pass: "Matrix@2023@",
-    },
-  });
+	};
+	const transporter = nodemailer.createTransport({
+		host: 'smtp.office365.com',
+		port: 587,
+		auth: {
+			user: 'sales@iroottech.com',
+			pass: 'Matrix@2023@',
+		},
+	});
 
-  if (req.method === "POST") {
-    let attachments: any[] = [];
-    if (result.files && Array.isArray(result.files)) {
-      result.files.forEach((element) => {
-        attachments.push({
-          filename: element.originalname,
-          content: element.buffer,
-        });
-      });
-    }
-    transporter.sendMail(
-      { ...message, attachments: attachments },
-      (err: any, info: any) => {
-        if (err) {
-          res.status(404).json({
-            message: `Connection refused at ${err.address}` as any,
-          });
-        } else {
-          res.status(250).json({
-            message: `Message delivered to ${info.accepted}`,
-          });
-        }
-      }
-    );
-  }
+	if (req.method === 'POST') {
+		let attachments: any[] = [];
+		if (result.files && Array.isArray(result.files)) {
+			result.files.forEach((element) => {
+				attachments.push({
+					filename: element.originalname,
+					content: element.buffer,
+				});
+			});
+		}
+		transporter.sendMail(
+			{ ...message, attachments: attachments },
+			(err: any, info: any) => {
+				if (err) {
+					res.status(404).json({
+						message: `Connection refused at ${err.address}` as any,
+					});
+				} else {
+					res.status(250).json({
+						message: `Message delivered to ${info.accepted}`,
+					});
+				}
+			}
+		);
+	}
 
-  res.status(200).json({ name: "John Doe" });
+	res.status(200).json({ name: 'John Doe' });
 }

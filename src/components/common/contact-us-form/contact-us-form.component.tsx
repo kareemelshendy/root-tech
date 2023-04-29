@@ -91,12 +91,7 @@ export const ContactUsForm: React.FC<Props> = () => {
 				<div>
 					<div className='flex gap-4 items-center '>
 						<input
-							{...register('subscribe', {
-								required: {
-									value: true,
-									message: 'Required Field',
-								},
-							})}
+							{...register('subscribe', {})}
 							type='checkbox'
 							name='subscribe'
 							id='subscribe'
@@ -135,10 +130,10 @@ export const ContactUsForm: React.FC<Props> = () => {
 						setValue={setValue}
 						isFileReset={isFileReset}
 						rules={{
-							required: {
-								value: true,
-								message: 'Required Field',
-							},
+							// required: {
+							// 	value: true,
+							// 	message: 'Required Field',
+							// },
 							validate: {
 								maxLength: (value: string) => {
 									if (

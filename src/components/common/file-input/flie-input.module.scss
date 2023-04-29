@@ -2,6 +2,6 @@
 	@apply hidden;
 
 	&__label {
-		@apply px-[13px] py-[13.5px] text-[24px] rounded-default bg-[#ECF7FF] flex text-black items-center gap-[12px] min-w-[168px] h-[58px] hover:bg-colorPrimary duration-150 hover:text-white ;
+		@apply px-[13px] py-[13.5px] text-[24px] rounded-default bg-[#ECF7FF] flex text-black items-center gap-[12px] min-w-[168px] h-[58px] hover:bg-colorPrimary duration-150 hover:text-white cursor-pointer;
 	}
 }

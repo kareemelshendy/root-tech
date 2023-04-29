@@ -17,9 +17,11 @@ export const useSendEmail = () => {
 		setIsLoading(true);
 		setError(null);
 		try {
-			await sendEmail(body);
-			setSuccess(true);
-			setIsLoading(false);
+			const response = await sendEmail(body);
+			if (response.data.name) {
+				setSuccess(true);
+				setIsLoading(false);
+			}
 		} catch (error: any) {
 			setError(error);
 			setIsLoading(false);
