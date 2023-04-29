@@ -1,0 +1,22 @@
+.modal {
+	$parent: &;
+	@apply fixed inset-0 flex justify-center items-center transition-colors invisible;
+	z-index: 99;
+
+	&--show {
+		@apply visible bg-black/20;
+	}
+
+	&__content {
+		@apply h-[361px] w-[438px] bg-white rounded-default shadow-default overflow-hidden scale-150 opacity-0;
+
+		&--show {
+			@apply scale-100 opacity-100;
+		}
+	}
+
+	&__close-button {
+		inset-inline-end: 22px;
+		@apply absolute  top-[22px] text-colorHeading;
+	}
+}

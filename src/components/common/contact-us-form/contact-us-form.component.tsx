@@ -1,6 +1,12 @@
 import { useForm } from 'react-hook-form';
 import styles from './contact-us-form.module.scss';
-import { ErrorMessage, FileInput, Input } from '@/components';
+import {
+	ErrorMessage,
+	FileInput,
+	Input,
+	SuccessIcon,
+	SuccessModal,
+} from '@/components';
 import { useRouter } from 'next/router';
 import useTranslation from 'next-translate/useTranslation';
 import sendEmail from '@/lib/sendEmail';
@@ -9,7 +15,8 @@ import { useEffect, useState } from 'react';
 
 interface Props {}
 export const ContactUsForm: React.FC<Props> = () => {
-	const [isImageReset, setIsImageReset] = useState(false);
+	const [isFileReset, setIsFileReset] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 	const { t } = useTranslation();
 	const {
 		handleSubmit,
@@ -31,16 +38,30 @@ export const ContactUsForm: React.FC<Props> = () => {
 	useEffect(() => {
 		if (success) {
 			console.log({ success });
-			setIsImageReset(true);
+			setIsFileReset(true);
 			reset();
+			setShowModal(true);
 		}
 	}, [success]);
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>
-			{/* {success ? (
-				<p>تم ارسال الرساله بنجاح سيتم التواصل مع لاحقا</p>
-			) : null} */}
+			{error ? (
+				<div className={styles['form__error']}>{t('common:error')}</div>
+			) : null}
+			<SuccessModal show={showModal} setShow={setShowModal}>
+				<div className={styles['form__modal']}>
+					<span className={styles['form__modal-icon']}>
+						<SuccessIcon />
+					</span>
+					<h2 className={styles['form__modal-title']}>
+						{t('common:request-success')}
+					</h2>
+					<p className={styles['form__modal-subtitle']}>
+						{t('common:request-desc')}
+					</p>
+				</div>
+			</SuccessModal>
 			<Input
 				name='name'
 				placeholder={t('common:contact.form.labels.name')}
@@ -114,7 +135,7 @@ export const ContactUsForm: React.FC<Props> = () => {
 						name='files'
 						trigger={trigger}
 						setValue={setValue}
-						isImageReset={isImageReset}
+						isFileReset={isFileReset}
 						rules={{
 							required: {
 								value: true,

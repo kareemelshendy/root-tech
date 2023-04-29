@@ -110,5 +110,8 @@
         "need-help": "brauchen Sie Hilfe?",
         "about": "Über uns"
     },
-    "back":"Zurück zur Startseite"
+    "back": "Zurück zur Startseite",
+    "request-success": "Die Anfrage wurde erfolgreich gesendet!",
+    "request-desc": "Sie werden später kontaktiert",
+    "error": "Etwas ist schief gelaufen!"
 }

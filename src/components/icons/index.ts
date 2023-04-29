@@ -15,6 +15,7 @@ export { default as LockIcon } from "./lock-icon";
 export { default as MobileIcon } from "./mobile-icon";
 export { default as PercentageCircleIcon } from "./percentage-circle-icon";
 export { default as PhoneIcon } from "./phone-icon";
+export { default as SuccessIcon } from "./success-icon";
 export { default as TogglerIcon } from "./toggler-icon";
 export { default as TrashIcon } from "./trash-icon";
 export { default as TwitterIcon } from "./twitter-icon";

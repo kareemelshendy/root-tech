@@ -2,8 +2,28 @@
 	&__submit {
 		@apply text-white border-2 border-white py-[13px]  w-[123px] h-[66px] flex items-center justify-center rounded-default text-[24px] hover:bg-colorPrimary duration-150;
 
-        &--primary{
-            @apply border-colorPrimary text-colorPrimary hover:text-white hover:bg-colorPrimary
-        }
+		&--primary {
+			@apply border-colorPrimary text-colorPrimary hover:text-white hover:bg-colorPrimary;
+		}
+	}
+
+	&__error {
+		@apply py-3 px-3 font-semibold  mb-1 text-red-600 bg-red-400/25 rounded-default;
+	}
+
+	&__modal {
+		@apply py-[72px] flex flex-col justify-center items-center;
+
+		&-icon {
+			@apply text-[78px] mb-4;
+		}
+
+		&-title {
+			@apply text-colorSuccess font-semibold text-[22px] mb-4;
+		}
+
+		&-subtitle {
+			@apply text-colorSuccess text-[22px];
+		}
 	}
 }

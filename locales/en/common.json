@@ -110,5 +110,8 @@
         "need-help": "Need Help?",
         "about": "About"
     },
-    "back": "Back to home page"
+    "back": "Back to home page",
+    "request-success": "The request has been sent successfully!",
+    "request-desc": "You will be contacted later",
+    "error": "Something went wrong!"
 }
