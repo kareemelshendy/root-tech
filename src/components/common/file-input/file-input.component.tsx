@@ -32,7 +32,6 @@ export const FileInput: React.FC<Props> = ({
 	const { t } = useTranslation();
 
 	const handleFileChange = (e: any) => {
-		console.log('change', e.target.files);
 		if (fileList.length < 3) {
 			setFileList((oldValues) => [...oldValues, ...e.target.files]);
 		}

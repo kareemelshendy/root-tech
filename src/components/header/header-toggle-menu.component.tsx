@@ -16,8 +16,6 @@ export const HeaderToggleMenu = () => {
 		push({ pathname, query }, asPath, { locale: lang });
 	};
 
-	console.log(showMenu);
-
 	return (
 		<>
 			<div

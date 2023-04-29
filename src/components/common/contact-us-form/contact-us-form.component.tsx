@@ -31,13 +31,11 @@ export const ContactUsForm: React.FC<Props> = () => {
 	const { error, sendContactEmail, isLoading, success } = useSendEmail();
 
 	const onSubmit = (data: any) => {
-		console.log('data', data);
 		sendContactEmail(data);
 	};
 
 	useEffect(() => {
 		if (success) {
-			console.log({ success });
 			setIsFileReset(true);
 			reset();
 			setShowModal(true);

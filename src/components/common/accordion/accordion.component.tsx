@@ -13,8 +13,6 @@ export const Accordion: React.FC<Props> = ({ title, children }) => {
 	useEffect(() => {
 		if (show) {
 			let height = contentRef.current?.clientHeight!;
-			console.log('height', height);
-
 			setCurrentHight(`${height}px`);
 		} else {
 			setCurrentHight('0px');
