@@ -35,9 +35,9 @@ export const ContactUsForm: React.FC<Props> = () => {
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>
-			{success ? (
+			{/* {success ? (
 				<p>تم ارسال الرساله بنجاح سيتم التواصل مع لاحقا</p>
-			) : null}
+			) : null} */}
 			<Input
 				name='name'
 				placeholder={t('common:contact.form.labels.name')}
