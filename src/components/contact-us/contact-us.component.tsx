@@ -47,7 +47,7 @@ export const ContactUs: React.FC<Props> = () => {
 							<span>
 								<LocationIcon />
 							</span>
-							castroper st 273 44791, Germany ,Bochum
+							Castroper st 273 44791, Germany ,Bochum
 						</div>
 
 						<div className={styles['contact-us__contacts-item']}>
