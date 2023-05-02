@@ -2,3 +2,6 @@ version: '3'
 services:
   nextjs:
     build: ./
+    ports:
+      - 3000:3000
+      
