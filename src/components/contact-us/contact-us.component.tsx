@@ -62,8 +62,8 @@ export const ContactUs: React.FC<Props> = () => {
 							<span>
 								<EmailIcon />
 							</span>
-							<Link href={'mailto:Sales@iroottech.de'}>
-								Sales@iroottech.de
+							<Link href={'mailto:Sales@iroottech.com'}>
+								Sales@iroottech.com
 							</Link>
 						</div>
 					</div>

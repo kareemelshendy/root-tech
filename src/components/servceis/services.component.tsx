@@ -105,7 +105,7 @@ export const Services: React.FC<Props> = () => {
 							))}
 						</ul>
 						<img
-							src='/images/database.jpeg'
+							src='/images/os.jpeg'
 							alt='DataBase'
 							className={styles['services__offers-content-img']}
 						/>
@@ -113,7 +113,7 @@ export const Services: React.FC<Props> = () => {
 				</div>
 
 				<div className='flex  flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
-					<img src='/images/oracle.png' alt='Oracle' />
+					<img src='/images/oracle-small.png' alt='Oracle' width={240} height={31}/>
 					<img src='/images/sql.png' alt='SQL' />
 					<img src='/images/postget-sql.png' alt='Postget SQL' />
 				</div>
@@ -143,7 +143,7 @@ export const Services: React.FC<Props> = () => {
 						</ul>
 						<img
 							src='/images/security.jpeg'
-							alt='DataBase'
+							alt='Sercurity'
 							className={styles['services__offers-content-img']}
 						/>
 					</div>
@@ -180,7 +180,7 @@ export const Services: React.FC<Props> = () => {
 							))}
 						</ul>
 						<img
-							src='/images/os.jpeg'
+							src='/images/database.jpeg'
 							alt='DataBase'
 							className={styles['services__offers-content-img']}
 						/>
@@ -188,7 +188,7 @@ export const Services: React.FC<Props> = () => {
 				</div>
 
 				<div className='flex flex-wrap justify-around items-center gap-8 mb-[50px] lg:mb-[85px]'>
-					<img src='/images/oracle.png' alt='Oracle' />
+					<img src='/images/oracle-small.png' alt='Oracle' width={240} height={31} />
 					<img src='/images/redhat.png' alt='Red Hat' />
 					<img
 						src='/images/windows-server.png'

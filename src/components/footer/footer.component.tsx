@@ -36,7 +36,7 @@ export const Footer: React.FC<Props> = () => {
 								<span>
 									<LocationIcon />
 								</span>
-								castroper st 273 44791, Germany ,Bochum
+								Castroper st 273 44791, Germany ,Bochum
 							</div>
 
 							<div className={styles['footer__top-contact-item']}>
@@ -51,8 +51,8 @@ export const Footer: React.FC<Props> = () => {
 								<span>
 									<EmailIcon />
 								</span>
-								<Link href={'mailto:Sales@iroottech.de'}>
-									Sales@iroottech.de
+								<Link href={'mailto:Sales@iroottech.com'}>
+									Sales@iroottech.com
 								</Link>
 							</div>
 						</div>
@@ -116,7 +116,7 @@ export const Footer: React.FC<Props> = () => {
 								</h5>
 
 								<ul className={styles['footer__nav-menu']}>
-									<li className={styles['footer__nav-item']}>
+									{/* <li className={styles['footer__nav-item']}>
 										<Link
 											href={'/about'}
 											className={
@@ -124,9 +124,9 @@ export const Footer: React.FC<Props> = () => {
 											}>
 											{t('common:footer.about')}
 										</Link>
-									</li>
+									</li> */}
 
-									<li className={styles['footer__nav-item']}>
+									{/* <li className={styles['footer__nav-item']}>
 										<Link
 											href={'/contact-us'}
 											className={
@@ -134,7 +134,7 @@ export const Footer: React.FC<Props> = () => {
 											}>
 											{t('common:footer.contact')}
 										</Link>
-									</li>
+									</li> */}
 									<li className={styles['footer__nav-item']}>
 										<Link
 											href={'/policy'}
