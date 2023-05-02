@@ -1,0 +1,32 @@
+version: '3.7'
+
+services:
+  web-app:
+    restart: always
+    container_name: iroot-website
+    build:
+      context: ./
+      target: production
+    environment:
+      - VIRTUAL_HOST=iroottech.com,www.iroottech.com
+      - CERT_NAME=iroottech.com
+      - HOST=127.0.0.1
+      - PORT=3000
+    expose:
+      - 3000
+
+  nginx:
+    build: ./nginx
+    depends_on:
+      - web-app
+    ports:
+      - 80:80
+
+  certbot:
+    image: certbot/certbot
+    restart: unless-stopped
+    depends_on:
+      - nginx
+    volumes:
+      - ./data/certbot/conf:/etc/letsencrypt
+      - ./data/certbot/www:/var/www/certbot
