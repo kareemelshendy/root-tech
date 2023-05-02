@@ -38,20 +38,24 @@ export const Header: React.FC<Props> = ({ isWhite = false }) => {
 						{/* right section */}
 						<div className={styles['header__menu-wrapper']}>
 							{/* logo */}
-							<Link href={'/'} className={styles['header__logo']}>
-								{/* <LogoIcon /> */}
-								{pathname === '/contact-us' ? (
-									<img
-										src='./images/footer-logo.svg'
-										alt='I Root Tech'
-									/>
-								) : (
-									<img
-										src='./images/logo.svg'
-										alt='I Root Tech'
-									/>
-								)}
-							</Link>
+							<h1>
+								<Link
+									href={'/'}
+									className={styles['header__logo']}>
+									{/* <LogoIcon /> */}
+									{pathname === '/contact-us' ? (
+										<img
+											src='./images/footer-logo.svg'
+											alt='I Root Tech'
+										/>
+									) : (
+										<img
+											src='./images/logo.svg'
+											alt='I Root Tech'
+										/>
+									)}
+								</Link>
+							</h1>
 							{/* menu */}
 							<nav>
 								<ul className={styles['header__menu']}>
