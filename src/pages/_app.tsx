@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }: AppProps) {
 	return (
 		<>
 			<SEO />
-			<main className={`${cairo.className}`}>
+			<main >
 				<Layout>
 					<Component {...pageProps} />
 				</Layout>
