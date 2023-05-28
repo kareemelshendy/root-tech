@@ -62,7 +62,7 @@ export const Footer: React.FC<Props> = () => {
 						<div
 							className={`flex gap-0 md:gap-[50px] flex-col flex-wrap md:flex-row ${
 								locale === 'de'
-									? 'lg:gap-[130px]'
+									? 'lg:gap-[93px]'
 									: 'lg:gap-[171px]'
 							}`.trim()}>
 							<nav className={styles['footer__nav']}>
