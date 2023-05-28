@@ -33,7 +33,6 @@ export default async function handler(
 	res: NextApiResponse
 ) {
 	const result = await parseFormData(req, res);
-	console.log(result);
 	const message = {
 		from: 'sales@iroottech.com',
 		to: 'sales@iroottech.com',

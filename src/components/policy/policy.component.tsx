@@ -1,6 +1,7 @@
 import { Accordion } from '@/components';
 import styles from './policy.module.scss';
 import { Fragment } from 'react';
+import Link from 'next/link';
 interface Props {}
 
 export const Policy = () => {
@@ -312,6 +313,125 @@ export const Policy = () => {
 				https://www.e-recht24.de/muster-datenschutzerklaerung.html
 			</p>
 
+			<h3 className={styles['policy__subtitle']}>Imperssum</h3>
+			<p className={styles['policy__desc']}>
+				Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>
+				IRoot Technology GmbH
+			</h3>
+			<p className={styles['policy__desc']}>
+				Castroper-Straße 273 44791 Bochum, DE
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>Geschäftsführer:</h3>
+
+			<p className={styles['policy__desc']}>Hakam Hasoneh</p>
+			<h3 className={styles['policy__subtitle']}>Sitz / Amtsgericht:</h3>
+			<p className={styles['policy__desc']}>Bochum HRB 20492</p>
+
+			<h3 className={styles['policy__subtitle']}>Kontaktdaten:</h3>
+			<p className={styles['policy__desc']}>
+				Telefon:{' '}
+				<Link href={'tel:+4917648985373'}>(+49) 176 48985373</Link>
+				<br />
+				Telefax: beantragt
+				<br />
+				Email:{' '}
+				<Link
+					className='text-colorPrimary'
+					href={'mailto:Sales@iroottech.com'}>
+					Sales@iroottech.com
+				</Link>
+				<br />
+				Web:
+				<Link className='text-colorPrimary' href={'www.iroottech.com'}>
+					www.iroottech.com
+				</Link>{' '}
+				/{' '}
+				<Link className='text-colorPrimary' href={'www.iroottech.de'}>
+					www.iroottech.de
+				</Link>
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>Umsatzsteuer-ID:</h3>
+			<p className={styles['policy__desc']}>
+				Umsatzsteuer-Identifikationsnummer gemäß §27 a
+				Umsatzsteuergesetz: 36509761427
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>
+				Angaben zur Betriebshaftpflicht:
+			</h3>
+			<p className={styles['policy__desc']}>
+				Zertifikat und weitere Informationen: Haftpflichtversicherung -
+				beantragt
+				<br />
+				Geltungsbereich: weltweit
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>Haftungshinweis</h3>
+			<p className={styles['policy__desc']}>
+				Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine
+				Haftung für die Inhalte externer Links. Für den Inhalt der
+				verlinkten Seiten sind ausschließlich deren Betreiber
+				verantwortlich.
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>Haftung für Inhalte:</h3>
+
+			<p className={styles['policy__desc']}>
+				Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt.
+				Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte
+				können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter
+				sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen
+				Seiten nach den allgemeinen Gesetzen verantwortlich. Nach §§ 8
+				bis 10 TMG sind wir als Diensteanbieter jedoch nicht
+				verpflichtet, übermittelte oder gespeicherte fremde
+				Informationen zu überwachen oder nach Umständen zu forschen, die
+				auf eine rechtswidrige Tätigkeit hinweisen. Verpflichtungen zur
+				Entfernung oder Sperrung der Nutzung von Informationen nach den
+				allgemeinen Gesetzen bleiben hiervon unberührt. Eine
+				diesbezügliche Haftung ist jedoch erst ab dem Zeitpunkt der
+				Kenntnis einer konkreten Rechtsverletzung möglich. Bei
+				Bekanntwerden von entsprechenden Rechtsverletzungen werden wir
+				diese Inhalte umgehend entfernen.
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>Haftung für Links:</h3>
+
+			<p className={styles['policy__desc']}>
+				Unser Angebot enthält Links zu externen Webseiten Dritter, auf
+				deren Inhalte wir keinen Einfluss haben. Deshalb können wir für
+				diese fremden Inhalte auch keine Gewähr übernehmen. Für die
+				Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter
+				oder Betreiber der Seiten verantwortlich. Die verlinkten Seiten
+				wurden zum Zeitpunkt der Verlinkung auf mögliche Rechtsverstöße
+				überprüft. Rechtswidrige Inhalte waren zum Zeitpunkt der
+				Verlinkung nicht erkennbar. Eine permanente inhaltliche
+				Kontrolle der verlinkten Seiten ist jedoch ohne konkrete
+				Anhaltspunkte einer Rechtsverletzung nicht zumutbar. Bei
+				Bekanntwerden von Rechtsverletzungen werden wir derartige Links
+				umgehend entfernen.
+			</p>
+
+			<h3 className={styles['policy__subtitle']}>Urheberrecht:</h3>
+			<p className={styles['policy__desc']}>
+				Die durch die Seitenbetreiber erstellten Inhalte und Werke auf
+				diesen Seiten unterliegen dem deutschen Urheberrecht. Die
+				Vervielfältigung, Bearbeitung, Verbreitung und jede Art der
+				Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der
+				schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers.
+				Downloads und Kopien dieser Seite sind nur für den privaten,
+				nicht kommerziellen Gebrauch gestattet. Soweit die Inhalte auf
+				dieser Seite nicht vom Betreiber erstellt wurden, werden die
+				Urheberrechte Dritter beachtet. Insbesondere werden Inhalte
+				Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine
+				Urheberrechtsverletzung aufmerksam werden, bitten wir um einen
+				entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen
+				werden wir derartige Inhalte umgehend entfernen.
+			</p>
 			{data.map((item, index) => (
 				<Fragment key={index}>
 					<Accordion title={`${index + 1}.${item.title}`}>
