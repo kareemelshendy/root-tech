@@ -44,7 +44,6 @@ export const ContactUsForm: React.FC<Props> = () => {
 		}
 	}, [success]);
 
-	console.log({ success, isLoading });
 
 	return (
 		<form onSubmit={handleSubmit(onSubmit)} className={styles['form']}>

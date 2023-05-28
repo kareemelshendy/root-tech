@@ -9,7 +9,7 @@ const cairo = Cairo({
 
 export default function App({ Component, pageProps }: AppProps) {
 	return (
-    <main className={`${cairo.className}`}>
+    <main >
 		<Layout>
 	
 			<Component {...pageProps} />
