@@ -24,8 +24,8 @@ export const HeaderTop: React.FC<Props> = () => {
 					<p className={styles['header__top-content-text']}>
 						{t('common:header.top')}
 					</p>
-
-					<Link href={'tel:+4917648985373'}>(+49) 176 48985373</Link>
+					
+					<Link href={'tel:01211744759'}>(+2) 01211744759</Link>
 				</div>
 
 				<button

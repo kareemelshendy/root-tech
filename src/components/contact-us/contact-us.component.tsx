@@ -55,8 +55,8 @@ export const ContactUs: React.FC<Props> = () => {
 							<span>
 								<PhoneIcon />
 							</span>
-							<Link href={'tel:+4917648985373'}>
-							(+49) 176 48985373
+							<Link href={'tel:+201211744759'}>
+							(+2) 01211744759
 							</Link>
 						</div>
 						<div className={styles['contact-us__contacts-item']}>

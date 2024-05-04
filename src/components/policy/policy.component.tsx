@@ -334,7 +334,7 @@ export const Policy = () => {
 			<h3 className={styles['policy__subtitle']}>Kontaktdaten:</h3>
 			<p className={styles['policy__desc']}>
 				Telefon:{' '}
-				<Link href={'tel:+4917648985373'}>(+49) 176 48985373</Link>
+				<Link href={'tel:+201211744759'}>(+2) 01211744759</Link>
 				<br />
 				Telefax: beantragt
 				<br />
